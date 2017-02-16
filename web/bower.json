@@ -24,6 +24,7 @@
     "leaflet": "^1.0.3",
     "jquery-ui": "^1.12.1",
     "angular-animate": "^1.6.1",
-    "angular-sanitize": "^1.6.1"
+    "angular-sanitize": "^1.6.1",
+    "raphael": "^2.2.7"
   }
 }

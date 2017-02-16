@@ -19,5 +19,10 @@ angular.module("app", ['ui.router', 'ngTouch'])
 	        templateUrl: "/html/index.html",
 	        controller: "mainController"
         })
+	      .state('deg', {
+	        url:'/degust/',
+	        templateUrl: "/html/degust.html",
+	        controller: "degController"
+        })
 	  }
 	])
