@@ -1,4 +1,4 @@
-angular.module("app", ['ui.router', 'ngTouch'])
+angular.module("app", ['ui.router', 'ngTouch', 'chart.js'])
 	.run(['$state', '$rootScope',  ($state, $rootScope )=>{
 
 	}])
@@ -24,5 +24,14 @@ angular.module("app", ['ui.router', 'ngTouch'])
 	        templateUrl: "/html/degust.html",
 	        controller: "degController"
         })
+	      .state('deg.fleivor', {
+	        url:'fleivor/',
+	        templateUrl: "/html/fleivor.html"
+        })
+	      .state('grafik', {
+	      	url:'/grafik/',
+	        templateUrl: "/html/grafik.html",
+	        controller: "RadarCtrl"
+	      })
 	  }
 	])

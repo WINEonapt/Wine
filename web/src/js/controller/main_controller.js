@@ -5,5 +5,5 @@ angular.module("app")
     $scope.setLang = (lang)=>{
       $rootScope.lang = lang
     }
-    
+
   })
