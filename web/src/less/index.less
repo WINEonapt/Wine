@@ -10,62 +10,155 @@ body {
 .menu {
 	width: 100%;
 	background-color: #C52028;
-	height: 25px;
-	
-	.index {
-		cursor: pointer;
+	height: 50px;
 
-		&:hover{
-			border-bottom: 2px solid black;
-		}
+	img {
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
 	}
-	li{
-	display: inline;
-	color: white;
-	padding: 1px 20px 1px 20px;
-	float: right;
-		&:hover{
-			border-bottom: 2px solid black;
-			cursor: pointer;
-		}
+
+	span {
+		font-size: 20px;
+		cursor: pointer;
+		margin-top: 15px;
+		display: inline;
+		color: black;
+		padding: 1px 20px 1px 20px;
+		float: right;
+		border-bottom: 2px solid black;
 	}
 }
 
 ///////////END-HEADER///////////////////////////
 
+
+///////////////index.html//////////
 .main-background {
 	background: url(../assets/img/main-background.jpg) no-repeat center;
 	background-size: cover;
 	height: 800px;
 	padding-top: 30px;
-}
-.header-text {
-		color: white;
-		font-size: 34px;
-		
+
+	.degust-button {
+		cursor: pointer;
+		font-size: 28px;
 		color: #C52028;
-		// margin-top: 100px;
+		background-color: black; 
+		border: solid #C52028;
+		width: 300px;
+		height: 37px;
+		white-space: nowrap;
+		text-align: center;
+		margin: 150px 0px 0px 70px;
+
+		&:hover {
+			background-color: #C52028;
+			color: black;
+		}
 	}
-.check {
-	width: 50px;
-	height: 50px;
-	background-color: grey;
 }
-.graf1 {
-	width: 400px;
-	height: 400px;
-	float: left;
-}
-.graf2 {
+///////////////END-index.html//////////
+
+
+///////////////degust.html/////////////
+
+.panel-off {
+	width: 750px;
+	height: 350px;
+	border: solid black;
 	margin-top: 100px;
-	margin-left: 50px;
-	width: 400px;
-	height: 400px;
-	float: left;
+	.panel-header {
+		width: 100%;
+		height: 25px;
+		background-color: #DBDBDB;
+		span {
+			margin-left: 50px;
+			font-size: 18px;
+		}
+	}
+	.panel-button {
+		border: solid #DBDBDB;
+		background-color: #DBDBDB;
+		text-align: center;
+		line-height: 25px;
+		cursor: pointer;
+		
+		width: 200px;
+		height: 25px;
+		float: right;
+		margin-right: 100px;
+		margin-top: 20px;
+		&:hover {
+			border: solid #C52028;
+		}
+	}
+	.panel-metod{
+		margin-top: 30px;
+		.panel-label{
+			margin-left: 120px;
+			.my-custom-label > input[type=radio] {
+				display: none;
+			}
+			.my-custom-label  span {
+			    display:inline-block;
+			    width: 200px;
+			    height: 40px;
+			    line-height: 40px;
+			    background: #efefef;
+			    border:  solid #efefef;
+			    text-align: center;
+			    margin-top: 2px;
+			    &:hover {
+			    	border:  solid #C52028;
+
+			    }
+			}
+			input[type=radio]:checked + span {
+				background-color: #95C88D;
+				border: solid #95C88D;
+			}
+		}
+
+	}
+	.panel-people{ 
+		margin-top: 50px;
+		.flex-container {
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-flow: row wrap;
+			justify-content: space-around;
+			.flex-item {
+				background: #DBDBDB;
+				width: 35px;
+				height: 35px;
+
+				margin-top: 10px;
+				font-weight: bold;
+				text-align: center;
+				line-height: 35px;
+			}
+		}
+	}
 }
-.graf3 {
+
+.panel-on {
+	width: 750px;
+	height: 350px;
+	border: solid black;
 	margin-top: 100px;
-	width: 400px;
-	height: 400px;
-	float: left;
+
+	.panel-header {
+		width: 100%;
+		height: 25px;
+		background-color: #95C88D;
+		span {
+			margin-left: 50px;
+			font-size: 18px;
+		}
+	}
 }
+///////////////END-degust.html/////////////

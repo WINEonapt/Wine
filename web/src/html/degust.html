@@ -1,7 +1,73 @@
 <div class="wrapper" ui-view>
-	<li ui-sref=".fleivor">Флейвор</li>
-	<li>undefined</li>
-	<li>undefined</li>
-	<li>undefined</li>
-	<li>undefined</li>
-</div>
+
+	<button ng-click="editStatus=!editStatus">ON?OFF</button>
+<!-- PANEL-OFF -->
+	<div class="panel-off" ng-if="!editStatus">
+		<div class="panel-header">
+			<span class="panel-status">Статус: неактивно</span>
+		</div>
+		<div class="panel-button" ng-click="editStatus=!editStatus">Начать Дегустацию</div>
+		<div style="clear: both;"></div>
+		<div class="panel-metod">
+			Выбор метода:
+			<div class="panel-label">
+				<label class="my-custom-label">
+				    <input name="test" type="radio" />
+				    <span>Метод Флейвора</span>
+				</label> 
+				<label class="my-custom-label">
+				    <input name="test" type="radio" />
+				    <span>Метод парного сравнивния</span>
+				</label>
+				<label class="my-custom-label" >
+				    <input name="test" type="radio" />
+				    <span>Метод триангуляции</span>
+				</label>
+				<label class="my-custom-label" >
+				    <input name="test" type="radio" />
+				    <span>Метод "Дуо-Трио"</span>
+				</label>
+				<label class="my-custom-label" >
+				    <input name="test" type="radio" />
+				    <span>Метод "два из пяти"</span>
+				</label>
+				<label class="my-custom-label" >
+				    <input name="test" type="radio" />
+				    <span>Метод "а не а"</span>
+				</label>
+			</div>
+		</div>
+		
+		<div class="panel-people">
+			Участники:
+			<div class="flex-container">
+			  <div class="flex-item">1</div>
+			  <div class="flex-item">2</div>
+			  <div class="flex-item">3</div>
+			  <div class="flex-item">4</div>
+			  <div class="flex-item">5</div>
+			  <div class="flex-item">6</div>
+			  <div class="flex-item">7</div>
+			  <div class="flex-item">8</div>
+			  <div class="flex-item">9</div>
+			  <div class="flex-item">10</div>
+			  <div class="flex-item">11</div>
+			  <div class="flex-item">12</div>
+			  <div class="flex-item">13</div>
+			  <div class="flex-item">14</div>
+			</div>
+		</div>
+
+	</div>
+
+<!-- PANEL-ON -->
+	<div class="panel-on" ng-if="editStatus">
+		<div class="panel-header">
+			<span class="panel-status">Статус: активно</span>
+		</div>
+		метод<br>
+		участники<br>
+		<button>прервать дегустацию</button><br>
+		<button ui-sref=".fleivor">перейти к сенсорному анализу</button><br>
+		Уникальный код: написать на js
+	</div>
