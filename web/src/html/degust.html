@@ -1,8 +1,7 @@
 <div class="wrapper" ui-view>
 
-	<button ng-click="editStatus=!editStatus">ON?OFF</button>
 <!-- PANEL-OFF -->
-	<div class="panel-off" ng-if="!editStatus">
+	<div class="panel-off" ng-show="!editStatus">
 		<div class="panel-header">
 			<span class="panel-status">Статус: неактивно</span>
 		</div>
@@ -12,62 +11,103 @@
 			Выбор метода:
 			<div class="panel-label">
 				<label class="my-custom-label">
-				    <input name="test" type="radio" />
+				    <input name="test" type="radio" ng-model="metod" value="1" />
 				    <span>Метод Флейвора</span>
 				</label> 
 				<label class="my-custom-label">
-				    <input name="test" type="radio" />
+				    <input name="test" type="radio" ng-model="metod" value="2" disabled/>
 				    <span>Метод парного сравнивния</span>
 				</label>
 				<label class="my-custom-label" >
-				    <input name="test" type="radio" />
+				    <input name="test" type="radio" ng-model="metod" value="3" disabled/>
 				    <span>Метод триангуляции</span>
 				</label>
 				<label class="my-custom-label" >
-				    <input name="test" type="radio" />
+				    <input name="test" type="radio" ng-model="metod" value="4" disabled/>
 				    <span>Метод "Дуо-Трио"</span>
 				</label>
 				<label class="my-custom-label" >
-				    <input name="test" type="radio" />
+				    <input name="test" type="radio" ng-model="metod" value="5" disabled/>
 				    <span>Метод "два из пяти"</span>
 				</label>
 				<label class="my-custom-label" >
-				    <input name="test" type="radio" />
+				    <input name="test" type="radio" ng-model="metod" value="6" disabled/>
 				    <span>Метод "а не а"</span>
 				</label>
 			</div>
 		</div>
 		
 		<div class="panel-people">
-			Участники:
+			Выбор количества участников:
 			<div class="flex-container">
-			  <div class="flex-item">1</div>
-			  <div class="flex-item">2</div>
-			  <div class="flex-item">3</div>
-			  <div class="flex-item">4</div>
-			  <div class="flex-item">5</div>
-			  <div class="flex-item">6</div>
-			  <div class="flex-item">7</div>
-			  <div class="flex-item">8</div>
-			  <div class="flex-item">9</div>
-			  <div class="flex-item">10</div>
-			  <div class="flex-item">11</div>
-			  <div class="flex-item">12</div>
-			  <div class="flex-item">13</div>
-			  <div class="flex-item">14</div>
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="people" value="1" />
+					<span class="flex-item">1</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="people" value="2"/>
+					<span class="flex-item">2</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="people" value="3"/>
+					<span class="flex-item">3</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="people" value="4"/>
+					<span class="flex-item">4</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="people" value="5"/>
+					<span class="flex-item">5</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="people" value="6"/>
+					<span class="flex-item">6</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="people" value="7"/>
+					<span class="flex-item">7</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="people" value="8"/>
+					<span class="flex-item">8</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="people" value="9"/>
+					<span class="flex-item">9</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="people" value="10"/>
+					<span class="flex-item">10</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="people" value="11"/>
+					<span class="flex-item">11</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="people" value="12"/>
+					<span class="flex-item">12</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="people" value="13"/>
+					<span class="flex-item">13</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="people" value="14"/>
+					<span class="flex-item">14</span>
+				</label> 
 			</div>
 		</div>
-
 	</div>
 
 <!-- PANEL-ON -->
-	<div class="panel-on" ng-if="editStatus">
+	<div class="panel-on" ng-show="editStatus">
 		<div class="panel-header">
 			<span class="panel-status">Статус: активно</span>
 		</div>
 		метод<br>
 		участники<br>
-		<button>прервать дегустацию</button><br>
+		<button ng-click="editStatus=!editStatus">прервать дегустацию</button><br>
 		<button ui-sref=".fleivor">перейти к сенсорному анализу</button><br>
 		Уникальный код: написать на js
 	</div>

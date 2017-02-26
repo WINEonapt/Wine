@@ -32,7 +32,6 @@ body {
 
 ///////////END-HEADER///////////////////////////
 
-
 ///////////////index.html//////////
 .main-background {
 	background: url(../assets/img/main-background.jpg) no-repeat center;
@@ -121,8 +120,53 @@ body {
 		}
 
 	}
+
 	.panel-people{ 
 		margin-top: 50px;
+		// .flex-container {
+		// 	display: -webkit-box;
+		// 	display: -moz-box;
+		// 	display: -ms-flexbox;
+		// 	display: -webkit-flex;
+		// 	display: flex;
+		// 	-webkit-flex-flow: row wrap;
+		// 	justify-content: space-around;
+		// 		.flex-item {
+		// 			background: #DBDBDB;
+		// 			border: solid #DBDBDB;
+		// 			width: 35px;
+		// 			height: 35px;
+
+		// 			margin-top: 10px;
+		// 			font-weight: bold;
+		// 			text-align: center;
+		// 			line-height: 35px;
+		// 		}
+		// 		.my-custom-label > input[type=radio] {
+		// 			display: none;
+		// 		}
+		// 		.my-custom-label  span {
+		// 		    background: #DBDBDB;
+		// 			width: 35px;
+		// 			height: 35px;
+
+		// 			margin-top: 10px;
+		// 			font-weight: bold;
+		// 			text-align: center;
+		// 			line-height: 35px;
+		// 		    &:hover {
+		// 		    	border:  solid #C52028;
+
+		// 			}
+		// 		}
+		// 		input[type=radio]:checked + span {
+		// 			background-color: #95C88D;
+		// 			border: solid #95C88D;
+		// 		}
+		// }
+		.my-custom-label > input[type=radio] {
+				display: none;
+			}
 		.flex-container {
 			display: -webkit-box;
 			display: -moz-box;
@@ -131,17 +175,23 @@ body {
 			display: flex;
 			-webkit-flex-flow: row wrap;
 			justify-content: space-around;
-			.flex-item {
-				background: #DBDBDB;
-				width: 35px;
-				height: 35px;
-
-				margin-top: 10px;
-				font-weight: bold;
-				text-align: center;
-				line-height: 35px;
+	}
+			.my-custom-label  span {
+			    display:inline-block;
+			    width: 35px;
+			    height: 35px;
+			    line-height: 35px;
+			    background: #efefef;
+			    border:  solid #efefef;
+			    text-align: center;
+			    &:hover {
+			    	border:  solid #C52028;
+			    }
 			}
-		}
+			input[type=radio]:checked + span {
+				background-color: #95C88D;
+				border: solid #95C88D;
+			}
 	}
 }
 
@@ -162,3 +212,9 @@ body {
 	}
 }
 ///////////////END-degust.html/////////////
+
+
+.graf {
+	height: 500px;
+	width: 500px;
+}
