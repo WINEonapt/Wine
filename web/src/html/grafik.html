@@ -1,8 +1,24 @@
-<!-- <div class="wrapper"> -->
+<!-- <div class="wrapper">  -->
 	<div class="graf">
 		<canvas id="radar" class="chart chart-radar"
 		  chart-data="data" chart-options="options" chart-labels="labels">
 		</canvas> 
-	</div>
+	
+		<!-- 	<table width="200" border="1" cellspacing="0" cellpadding="5" align="center"><tr><th width="300">ОЦЕНКА</th></tr></table> -->
+		<table width="200" border="1" cellspacing="0" cellpadding="5" align="center">
+				<th>ОПИСАНИЕ</th>
+				<th>ОЦЕНКА</th>
+				<th>ОПИСАНИЕ</th>
+				<th>ОЦЕНКА</th>
 
+			<tr>	<td >Винный</td><td>{{rad.vin}}</td><td >Цветочный</td><td>{{rad.cvet}}</td>			</tr>
+			<tr>	<td >Травянистый</td><td>{{rad.trav}}</td><td >Овощной</td><td>{{rad.ovosh}}</td>		</tr>
+			<tr>	<td >Минеральный</td><td>{{rad.miner}}</td>	<td >Мускатный</td><td>{{rad.muskat}}</td> 	</tr> 
+			<tr>	<td >Грейпфрут</td><td>{{rad.greip}}</td><td >Крыжовник</td><td>{{rad.kruj}}</td>   		</tr>
+			<tr>	<td >Окисленный</td><td>{{rad.okis}}</td><td >Эфирный</td><td>{{rad.efir}}</td>   	</tr>	
+			<tr>	<td >Интенсивность</td><td>{{rad.intens}}</td><td >Кислотность</td><td>{{rad.kislot}}</td>   </tr>	
+			<tr>	<td >Сладость</td><td>{{rad.slad}}</td> <td >Типичность </td><td>{{rad.tip}}</td>	 	</tr>
+			<tr>	<td >Длительность</td><td>{{rad.dlit}}</td> <td >Длительность</td><td>{{rad.dlit}}</td>	</tr>	    	
+		</table>
+	</div>
 <!-- </div> -->

@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="wrapper" >
 <!-- ПОКАЗАТЕЛИ -->
 	<table width="1000px" border="2" cellspacing="0" cellpadding="5" align="center">
 		<tr>
@@ -15,14 +15,14 @@
 	</table>
 	<!-- ВНЕШНИЙ ВИД -->
 	<table width="1000" border="1" cellspacing="0" cellpadding="5" align="center"><tr><th width="100">Группы ароматов</th></tr></table>
-	<table width="1000px" border="2" cellspacing="0" cellpadding="5" align="center">
-		    <tr>
-			    <td width="125px">Винный</td>	 	
-			    <td width="125px"> 5 <input type="radio" ng-model="rad.vin" value="5" ></td>
-			    <td width="125px"> 4 <input type="radio" ng-model="rad.vin" value="4" ></td>
-			    <td width="125px"> 3 <input type="radio" ng-model="rad.vin" value="3" ></td>
-			    <td width="125px"> 2 <input type="radio" ng-model="rad.vin" value="2" ></td>
-			    <td width="125px"> 1 <input type="radio" ng-model="rad.vin" value="1" ></td>
+	<table width="1000px" border="2" cellspacing="0" cellpadding="5" align="center"  >
+		    <tr > 
+			    <td width="125px" >Винный</td>	 	
+			    <td width="125px"> 5 <input type="radio" ng-model="rad.vin" name="rad.vin" value="5" required></td>
+			    <td width="125px"> 4 <input type="radio" ng-model="rad.vin" name="rad.vin" value="4" required></td>
+			    <td width="125px"> 3 <input type="radio" ng-model="rad.vin" name="rad.vin" value="3" required></td>
+			    <td width="125px"> 2 <input type="radio" ng-model="rad.vin" name="rad.vin" value="2" required></td>
+			    <td width="125px"> 1 <input type="radio" ng-model="rad.vin" name="rad.vin" value="1" required></td>
 			    <td width="125px"></td>
 			    <td width="125px"></td>
 		    </tr>
@@ -173,8 +173,7 @@
 				   	<td width="125px"> </td>
 		    	</tr>
 		    	<tr>
-				   	<td width="125px">Длительность</td>	 	
-				   	
+				   	<td width="125px">Длительность</td>	 		
 				   	<td width="125px"> 5 <input type="radio" ng-model="rad.dlit" value="5" ></td>
 				    <td width="125px"> 4 <input type="radio" ng-model="rad.dlit" value="4" ></td>
 				    <td width="125px"> 3 <input type="radio" ng-model="rad.dlit" value="3" ></td>
@@ -184,5 +183,5 @@
 				   	<td width="125px"> </td>
 		    	</tr>
 		</table>				
-		<button ui-sref="^.grafik" ng-click="drawGrafik()">Все верно</button>
+		<button ui-sref="^.grafik" ng-click="drawGrafik()" >Все верно</button>
 </div>
