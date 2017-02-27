@@ -28,10 +28,10 @@ angular.module("app", ['ui.router', 'ngTouch', 'chart.js'])
 	        url:'fleivor/',
 	        templateUrl: "/html/fleivor.html"
         })
-	      .state('grafik', {
-	      	url:'/grafik/',
-	        templateUrl: "/html/grafik.html",
-	        controller: "RadarCtrl"
+	      .state('deg.grafik', {
+	      	url:'grafik/',
+	        templateUrl: "/html/grafik.html"
+	        // controller: "RadarCtrl"
 	      })
 	  }
 	])

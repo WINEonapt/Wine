@@ -5,7 +5,7 @@
 		<div class="panel-header">
 			<span class="panel-status">Статус: неактивно</span>
 		</div>
-		<div class="panel-button" ng-click="editStatus=!editStatus">Начать Дегустацию</div>
+		<div class="panel-button" ng-click="editStatus=!editStatus;random()">Начать Дегустацию</div>
 		<div style="clear: both;"></div>
 		<div class="panel-metod">
 			Выбор метода:
@@ -105,9 +105,15 @@
 		<div class="panel-header">
 			<span class="panel-status">Статус: активно</span>
 		</div>
+		<div class="panel-button" ng-click="editStatus=!editStatus">Прервать Дегустацию</div>
+		<div style="clear: both;"></div>
+		<div class="panel-cod">
+			Уникальный код: {{rand}} 
+		</div>
+
+
 		метод<br>
-		участники<br>
-		<button ng-click="editStatus=!editStatus">прервать дегустацию</button><br>
+		участники {{people}}<br>
 		<button ui-sref=".fleivor">перейти к сенсорному анализу</button><br>
 		Уникальный код: написать на js
 	</div>
