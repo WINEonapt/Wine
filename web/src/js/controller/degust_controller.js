@@ -56,7 +56,6 @@ angular.module("app")
 //RELOAD-start
     $scope.reload =()=> {
         location.reload()
-        
     }
 //RELOAD-end
 

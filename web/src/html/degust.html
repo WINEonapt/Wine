@@ -37,7 +37,7 @@
 
 			</div>
 		</div>
-		
+
 		<div class="panel-people">
 			Выбор количества участников:
 			<div class="flex-container">
@@ -106,16 +106,50 @@
 		<div class="panel-header">
 			<span class="panel-status">Статус: активно</span>
 		</div>
-		<div class="panel-button" ng-click="editStatus=!editStatus">Прервать Дегустацию</div>
-		<div style="clear: both;"></div>
-		<div class="panel-cod">
-			Уникальный код: {{rand}} 
+
+		<div class="float-el">
+			<div class="panel-button" ng-click="editStatus=!editStatus">Прервать Дегустацию</div>
+			<div class="panel-cod">
+				Уникальный код: <span>{{rand}}</span> 
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+		
+		<div class="panel-metod">
+			Выбран метод:
+			<div class="panel-metod-select">
+				Метод Флейвора
+			</div>
 		</div>
 
-
-		метод<br>
-		участники {{people}}<br>
-		<button ui-sref=".fleivor">перейти к сенсорному анализу</button><br>
-		Уникальный код: написать на js
+		<div class="panel-people">
+			Участники:
+			<div class="people-kol-vo">
+				Всего - {{people}} 
+			</div>
+			<div class="people-connect">
+				Подключилось -
+				<div class="flex-container">
+					<div class="flex-item">1</div>
+					<div class="flex-item">2</div>
+					<div class="flex-item">3</div>
+					<div class="flex-item">4</div>
+					<div class="flex-item">5</div>
+					<div class="flex-item">6</div>
+					<div class="flex-item">7</div>
+					<div class="flex-item">8</div>
+					<div class="flex-item">9</div>
+					<div class="flex-item">10</div>
+					<div class="flex-item">11</div>
+					<div class="flex-item">12</div>
+					<div class="flex-item">13</div>
+					<div class="flex-item">14</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel-button-go" ui-sref=".fleivor">
+			Перейти к сенсорному анализу
+		</div>
 	</div>
-
+</div>

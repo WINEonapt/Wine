@@ -123,47 +123,6 @@ body {
 
 	.panel-people{ 
 		margin-top: 50px;
-		// .flex-container {
-		// 	display: -webkit-box;
-		// 	display: -moz-box;
-		// 	display: -ms-flexbox;
-		// 	display: -webkit-flex;
-		// 	display: flex;
-		// 	-webkit-flex-flow: row wrap;
-		// 	justify-content: space-around;
-		// 		.flex-item {
-		// 			background: #DBDBDB;
-		// 			border: solid #DBDBDB;
-		// 			width: 35px;
-		// 			height: 35px;
-
-		// 			margin-top: 10px;
-		// 			font-weight: bold;
-		// 			text-align: center;
-		// 			line-height: 35px;
-		// 		}
-		// 		.my-custom-label > input[type=radio] {
-		// 			display: none;
-		// 		}
-		// 		.my-custom-label  span {
-		// 		    background: #DBDBDB;
-		// 			width: 35px;
-		// 			height: 35px;
-
-		// 			margin-top: 10px;
-		// 			font-weight: bold;
-		// 			text-align: center;
-		// 			line-height: 35px;
-		// 		    &:hover {
-		// 		    	border:  solid #C52028;
-
-		// 			}
-		// 		}
-		// 		input[type=radio]:checked + span {
-		// 			background-color: #95C88D;
-		// 			border: solid #95C88D;
-		// 		}
-		// }
 		.my-custom-label > input[type=radio] {
 				display: none;
 			}
@@ -211,22 +170,88 @@ body {
 			font-size: 18px;
 		}
 	}
-
-	.panel-button {
-		border: solid #DBDBDB;
-		background-color: #DBDBDB;
-		text-align: center;
-		line-height: 25px;
-		cursor: pointer;
-		
-		width: 200px;
-		height: 25px;
-		float: right;
-		margin-right: 100px;
-		margin-top: 20px;
-		&:hover {
-			border: solid #C52028;
+	.float-el {
+		.panel-button {
+			border: solid #DBDBDB;
+			background-color: #DBDBDB;
+			text-align: center;
+			line-height: 25px;
+			cursor: pointer;
+			
+			width: 200px;
+			height: 25px;
+			float: right;
+			margin-right: 100px;
+			margin-top: 20px;
+			&:hover {
+				border: solid #C52028;
+			}
 		}
+		.panel-cod {
+			float: left;
+			margin-top: 25px;
+			span {
+				border: solid #95C88D;
+				padding: 2px 2px 2px 2px;
+			}
+		}
+	}
+	.panel-metod {
+		margin-top: 40px;
+		.panel-metod-select {
+			display:inline-block;
+			width: 200px;
+			height: 40px;
+			line-height: 40px;
+			background: #95C88D;
+			border:  solid #95C88D;
+			text-align: center;
+			margin-left: 20px;
+		}
+	}
+	.panel-people {
+		margin-top: 20px;
+		.people-kol-vo {
+			margin-top: 10px;
+		}
+		.people-connect {
+			.flex-container {
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-flex-flow: row wrap;
+				justify-content: space-around;
+				.flex-item {
+					display:inline-block;
+				    width: 35px;
+				    height: 35px;
+				    line-height: 35px;
+				    background: #95C88D;
+				    border:  solid #95C88D;
+				    text-align: center;
+				    
+				}
+			}
+		}
+	}
+	.panel-button-go {
+			border: solid #DBDBDB;
+			background-color: #DBDBDB;
+			text-align: center;
+			line-height: 25px;
+			cursor: pointer;
+			
+			width: 250px;
+			height: 25px;
+			float: right;
+			margin-right: 75px;
+			margin-top: 10px;
+			&:hover {
+				border: solid #C52028;
+			}
+	}
 }
 ///////////////END-degust.html/////////////
 
@@ -235,3 +260,4 @@ body {
 	height: 500px;
 	width: 500px;
 }
+
