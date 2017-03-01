@@ -261,3 +261,28 @@ body {
 	width: 500px;
 	margin: 0 auto;
 }
+.flex-iteme{
+	text-align: center;
+	margin-left: 35px;
+}
+.custom-label  span {
+
+			    display:inline-block;
+			    width: 15px;
+			    height: 15px;
+			    background: #efefef;
+			    border:  solid #efefef;
+			    text-align: center;
+			    &:hover {
+			    	border:  solid #C52028;
+			    	cursor: pointer;
+			    }
+			}
+				input[type=radio]:checked + span {
+				background-color: #95C88D;
+				border: solid #95C88D;
+			}
+.custom-label > input[type=radio] {
+				display: none;
+
+}
