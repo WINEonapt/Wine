@@ -1,7 +1,7 @@
 <div class="wrapper" ui-view>
 
 <!-- PANEL-OFF -->
-	<div class="panel-off" ng-show="!editStatus" >
+	<!-- <div class="panel-off" ng-show="!editStatus" >
 		<div class="panel-header">
 			<span class="panel-status">Статус: неактивно</span>
 		</div>
@@ -37,7 +37,7 @@
 
 			</div>
 		</div>
-
+Максимум до 16: Выбор оценки за дескриптор(максимальны); Выбор дескриптора,
 		<div class="panel-people">
 			Выбор количества участников:
 			<div class="flex-container">
@@ -99,10 +99,10 @@
 				</label> 
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 <!-- PANEL-ON -->
-	<div class="panel-on" ng-show="editStatus">
+	<!-- <div class="panel-on" ng-show="editStatus">
 		<div class="panel-header">
 			<span class="panel-status">Статус: активно</span>
 		</div>
@@ -115,12 +115,7 @@
 			<div style="clear: both;"></div>
 		</div>
 		
-		<div class="panel-metod">
-			Выбран метод:
-			<div class="panel-metod-select">
-				Метод Флейвора
-			</div>
-		</div>
+	
 
 		<div class="panel-people">
 			Участники:
@@ -151,5 +146,315 @@
 		<div class="panel-button-go" ui-sref=".fleivor">
 			Перейти к сенсорному анализу
 		</div>
+	</div> -->
+
+
+	<div class="panel-off">
+		<div class="panel-header">
+			<span class="panel-status">Статус: неактивно</span>
+		</div>
+
+<!-- STEP1 ------------------------------------------>
+		<div class="step1" ng-show="show==1">
+
+			<div class="step-status">
+				<div class="status-page">1/5</div>
+				<div class="status-text">Продукт</div>
+				<div class="status-button">
+					<button ng-click="show=2" class="ready-button">Продолжить</button>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+
+			<div class="step-content">
+				Выберите продукт:
+					<label class="my-custom-label">
+						<input type="radio" ng-model="panel.produkt" value="Вино"/>
+						<span class="flex-item">Вино</span>
+					</label> 
+					<label class="my-custom-label">
+						<input  type="radio" ng-model="panel.produkt" value="Мясо"/>
+						<span class="flex-item">Мясо</span>
+					</label> 
+					<label class="my-custom-label">
+						<input type="radio" ng-model="panel.produkt" value="Молоко"/>
+						<span class="flex-item">Молоко</span>
+					</label> 
+					<label class="my-custom-label">
+						<input type="radio" ng-model="panel.produkt" value="Пиво"/>
+						<span class="flex-item">Пиво</span>
+					</label> 
+					<label class="my-custom-label">
+						<input type="radio" ng-model="panel.produkt" value="Шампанское"/>
+						<span class="flex-item">Шампанское</span>
+					</label> 
+			</div>
+
+		</div>
+
+<!-- STEP2 ------------------------------------------>
+		<div class="step2" ng-show="show==2">
+			<div class="step-status">
+				<div class="status-page">2/5</div>
+				<div class="status-text">Карта продукта</div>
+				<div class="status-button">
+					<button ng-click="show=1" class="back-button">Назад</button>
+					<button ng-click="show=3" class="ready-button">Продолжить</button>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="step-content">
+				Продукт:<span class="select">{{panel.produkt}}</span>
+				<div class="karta">
+				<div class="karta-1">
+					<span>Производитель:</span><br>
+					<span>Год:</span><br>
+					<span>Название:</span><br>
+					<span>Сорт:</span><br>
+				</div>
+				<div class="karta-2">
+				<input type="text" ng-model="panel.proizvod"><br>				
+				<input type="number" ng-model="panel.god"><br>				
+				<input type="text" ng-model="panel.name"><br>
+				<input type="text" ng-model="panel.sort"><br>
+				</div>
+				<div style="clear: both;"></div>
+				</div>
+			</div>
+				
+		</div>
+
+<!-- STEP3 ------------------------------------------>
+		<div class="step3" ng-show="show==3">
+			<div class="step-status">
+				<div class="status-page">3/5</div>
+				<div class="status-text">Метод</div>
+				<div class="status-button">
+					<button ng-click="show=2" class="back-button">Назад</button>
+					<button ng-click="show=4" class="ready-button">Продолжить</button>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="step-content">
+				<div class="step3-block1">
+					Продукт:<span class="select">{{panel.produkt}}</span>
+				</div>
+				<div class="step3-block2">
+					<span>Производитель:{{panel.proizvod}}</span>
+					<span>Год:{{panel.god}}</span><br>
+					<span>Название:{{panel.name}}</span>
+					<span>Сорт:{{panel.sort}}</span>
+				</div>
+				<div style="clear: both;"></div>
+				<div class="metod">
+				Выбор метода:
+					<div class="panel-label">
+						<div class="flex-container">
+							<label class="my-custom-label">
+							    <input type="radio" ng-model="panel.metod" value="Метод Флейвора" />
+							    <span>Метод Флейвора</span>
+							</label> 
+							<label class="my-custom-label">
+							    <input  type="radio" ng-model="panel.metod" value="Метод парного сравнивния" />
+							    <span>Метод парного сравнивния</span>
+							</label>
+							<label class="my-custom-label" >
+							    <input  type="radio" ng-model="panel.metod" value="Метод триангуляции" />
+							    <span>Метод триангуляции</span>
+							</label>
+							<label class="my-custom-label" >
+							    <input  type="radio" ng-model="panel.metod" value="Метод 'Дуо-Трио'" />
+							    <span>Метод "Дуо-Трио"</span>
+							</label>
+							<label class="my-custom-label" >
+							    <input  type="radio" ng-model="panel.metod" value="Метод 'два из пяти'"/>
+							    <span>Метод "два из пяти"</span>
+							</label>
+							<label class="my-custom-label" >
+							    <input  type="radio" ng-model="panel.metod" value="Метод 'а не а'" />
+							    <span>Метод "а не а"</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="max-point">
+					Максимальная оценка:
+					<input type="number" min="1" value="1" ng-model="panel.eval">
+				</div>
+			</div>
+		</div>
+
+<!-- STEP4 ------------------------------------------>
+		<div class="step4" ng-show="show==4">
+			<div class="step-status">
+				<div class="status-page">4/5</div>
+				<div class="status-text">Дескрипторы</div>
+				<div class="status-button">
+					<button ng-click="show=3" class="back-button">Назад</button>
+					<button ng-click="show=5" class="ready-button">Продолжить</button>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="step-content">
+					<div class="step3-block1">
+						Продукт:<span class="select">{{panel.produkt}}</span>
+					</div>
+					<div class="step3-block2">
+						<span>Производитель:{{panel.proizvod}}</span>
+						<span>Год:{{panel.god}}</span><br>
+						<span>Название:{{panel.name}}</span>
+						<span>Сорт:{{panel.sort}}</span>
+					</div>
+					<div style="clear: both;"></div>
+			</div>
+			<div class="step4-content">
+				<div class="panel-metod">
+				Выбран метод:<span class="select">{{panel.metod}}</span>
+				</div>
+				<div class="panel-metod2">
+					Максимальная оценка: <span>{{panel.eval}}</span>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="step4-deskr">
+				Выбор дескрипторов:
+				<div class="panel-label">
+						<div class="flex-container">
+							<label class="my-custom-label">
+							    <input type="radio" ng-model="panel.deskr" value="Стандартные" />
+							    <span>Стандартные</span>
+							</label> 
+							<label class="my-custom-label">
+							    <input  type="radio" ng-model="panel.deskr" value="Измененные" />
+							    <span>Выбрать</span>
+							</label>
+						</div>
+					</div>
+					Максимальное кол-во участников:
+					<div class="flex-container">
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="panel.people" value="1" />
+					<span class="flex-item">1</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="panel.people" value="2"/>
+					<span class="flex-item">2</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="panel.people" value="3"/>
+					<span class="flex-item">3</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="panel.people" value="4"/>
+					<span class="flex-item">4</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="panel.people" value="5"/>
+					<span class="flex-item">5</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="panel.people" value="6"/>
+					<span class="flex-item">6</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="panel.people" value="7"/>
+					<span class="flex-item">7</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="panel.people" value="8"/>
+					<span class="flex-item">8</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="panel.people" value="9"/>
+					<span class="flex-item">9</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="panel.people" value="10"/>
+					<span class="flex-item">10</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="panel.people" value="11"/>
+					<span class="flex-item">11</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="panel.people" value="12"/>
+					<span class="flex-item">12</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="panel.people" value="13"/>
+					<span class="flex-item">13</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="panel.people" value="14"/>
+					<span class="flex-item">14</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="panel.people" value="15"/>
+					<span class="flex-item">15</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="panel.people" value="16"/>
+					<span class="flex-item">16</span>
+				</label> 
+			</div>
+			</div>
+		</div>
+<!-- STEP5 ------------------------------------------>
+		<div class="step5" ng-show="show==5">
+		<div class="step-status">
+			<div class="status-page">5/5</div>
+			<div class="status-text">Карта продукта</div>
+			<div class="status-button">
+				<button ng-click="show=3" class="back-button">Назад</button>
+				<button ng-click="show=1" class="ready-button">Начать</button>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+		<table>
+			<tr>
+				<td>sdas</td>
+				<td>sadas</td>
+			</tr>
+		</table>
+
+
+		</div>
+
+
+
+
+
 	</div>
+
+
+
+
+<!-- 	<div class="panel-off" ng-show="first" >
+		<div class="panel-header">
+			<span class="panel-status">Статус: неактивно</span>
+		</div>
+		Продукт: {{people}}
+
+		<br>Производетель:
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="proiz" value="Шабо"/>
+					<span class="flex-item">Шабо</span>
+				</label> 
+				<label class="my-custom-label">
+					<input name="test2" type="radio" ng-model="proiz" value="Болград"/>
+					<span class="flex-item">Болград</span>
+				</label> 
+		
+		
+		<br><button ng-click="first=!first">Назад</button>
+		<br><button ng-click="first2=!first2">готово</button>
+	</div> -->
+
+
+
+
+
+
+
+	<br><button ng-click="goFuck()">show</button>
 </div>
