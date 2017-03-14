@@ -70,24 +70,7 @@ body {
 			-webkit-flex-flow: row wrap;
 			justify-content: space-around;
 	}
-.ready-button{
-	display:inline-block;
-	width: 100px;
-	height: 40px;
-	line-height: 30px;
-	background: #efefef;
-	border:  solid #efefef;
-	text-align: center;
-	&:hover {
-		border:  solid #C52028;
-		cursor: pointer;
-		}
-	&:active {
-		background-color: #95C88D;
-		border: solid #95C88D;
-	}
-}
-.back-button {
+.ready-button, .back-button {
 	display:inline-block;
 	width: 100px;
 	height: 40px;
@@ -115,131 +98,139 @@ body {
 }
 
 
-.panel-off {
-	width: 750px;
-	height: 350px;
-	border: solid black;
-	margin-top: 100px;
-	.panel-header {
-		width: 100%;
-		height: 25px;
-		background-color: #DBDBDB;
-		span {
-			margin-left: 50px;
-			font-size: 18px;
-		}
-	}
-	.step-status {
-		width: 100%;
-		height: 40px;
-		border-bottom: 1px solid black;
-		margin-top: 2px;
-		padding-bottom: 2px;
-		.status-page {
-			float: left;
-			font-weight: bold;
-			width: 300px;
-			height: 100%;
-			line-height: 40px;
-		}
-		.status-text {
-			float: left;
-			width: 200px;
-			height: 100%;
-			line-height: 40px;
-		}
-		.status-button {
-			float: right;
-			margin-right: 5px;
+// .panel-off {
+// 	width: 750px;
+// 	height: 350px;
+// 	border: solid black;
+// 	margin-top: 100px;
+// 	.panel-header {
+// 		width: 100%;
+// 		height: 25px;
+// 		background-color: #DBDBDB;
+// 		span {
+// 			margin-left: 50px;
+// 			font-size: 18px;
+// 		}
+// 	}
+// 	.step-status {
+// 		width: 100%;
+// 		height: 40px;
+// 		border-bottom: 1px solid black;
+// 		margin-top: 2px;
+// 		padding-bottom: 2px;
+// 		.status-page {
+// 			float: left;
+// 			font-weight: bold;
+// 			width: 300px;
+// 			height: 100%;
+// 			line-height: 40px;
+// 		}
+// 		.status-text {
+// 			float: left;
+// 			width: 200px;
+// 			height: 100%;
+// 			line-height: 40px;
+// 		}
+// 		.status-button {
+// 			float: right;
+// 			margin-right: 5px;
 
-		}
-	}
-	.step-content {
-		margin-top: 10px;
-		margin-left: 10px;
-	}
-	.karta {
-		margin-top: 10px;
-	}
-	.karta-1{
-		float: left;
-		margin-left: 225px;
-		span {
-			display: inline-block;
-			margin-top: 4px;
-		}
-	}
-	.karta-2 {
-		float: right;
-		margin-right: 225px;
-		input {
-		margin-top: 2px;
-		}
-	}
+// 		}
+// 	}
+// 	.step-content {
+// 		margin-top: 10px;
+// 		margin-left: 10px;
+// 	}
+// 	.karta {
+// 		margin-top: 10px;
+// 	}
+// 	.karta-1{
+// 		float: left;
+// 		margin-left: 225px;
+// 		span {
+// 			display: inline-block;
+// 			margin-top: 4px;
+// 		}
+// 	}
+// 	.karta-2 {
+// 		float: right;
+// 		margin-right: 225px;
+// 		input {
+// 		margin-top: 2px;
+// 		}
+// 	}
 
-	.step3-block1 {
-		float: left;
-	}
-	.step3-block2 {
-		float: right;
-		width: 550px;
-		line-height: 25px;
-		word-spacing: 10px;
-	}
-	.metod {
-		margin-top: 10px;
-		padding-bottom: 10px;
-		.panel-label{
-			// margin-left: 22px;\
-			width: 100%;
-			label {
-				span {
-					width: 220px;
-					margin-top: 2px;
+// 	.step3-block1 {
+// 		float: left;
+// 	}
+// 	.step3-block2 {
+// 		float: right;
+// 		width: 550px;
+// 		line-height: 25px;
+// 		word-spacing: 10px;
+// 	}
+// 	.metod2 {
+// 		margin-top: 10px;
+// 		padding-bottom: 10px;
+// 		.panel-label{
+// 			// margin-left: 22px;\
+// 			width: 100%;
+// 			label {
+// 				span {
+// 					width: 220px;
+// 					margin-top: 2px;
 
-				}
-			}
-		}
-	}
-	.max-point {
-		margin-top: 10px;
-		input {
-			width: 50px;
-		}
-	}
-	.step4-content{
-		margin-top: 10px;
-		margin-left: 10px;
-		.panel-metod{
-			float: left;
-			span {
-				width: 200px;
-			}
-		}
-		.panel-metod2{
-			float: right;
-			margin-right: 150px;
-			margin-top: 14px;
-		}
-	}
-	.step4-deskr {
-		margin-top: 10px;
-		margin-left: 10px;
-		.panel-label{
-			.my-custom-label {
-				span {
-				width: 250px;
-				}
-			}
-		}
-		.flex-container {
-			label {
-				span{
-					width: 20px;
-				}
-			}
-		}
-	}
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.max-point {
+// 		margin-top: 10px;
+// 		input {
+// 			width: 50px;
+// 		}
+// 	}
+// 	.step4-content{
+// 		margin-top: 10px;
+// 		margin-left: 10px;
+// 		.panel-metod{
+// 			float: left;
+// 			span {
+// 				width: 200px;
+// 			}
+// 		}
+// 		.panel-metod2{
+// 			float: right;
+// 			margin-right: 150px;
+// 			margin-top: 14px;
+// 		}
+// 	}
+// 	.step4-deskr {
+// 		margin-top: 10px;
+// 		margin-left: 10px;
+// 		.panel-label{
+// 			.my-custom-label {
+// 				span {
+// 				width: 250px;
+// 				}
+// 			}
+// 		}
+// 		.flex-container {
+// 			label {
+// 				span{
+// 					width: 20px;
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.step5 {
+// 		table, td {
+// 			border: 1px solid black;
+// 		}
+// 		table {
+// 			margin-top: 5px;
+// 		}
+// 	}
 
 
 
@@ -340,106 +331,155 @@ body {
 	// 			border: solid #95C88D;
 	// 		}
 	// }
-}
+// }
 
-.panel-on {
+// .step6 {
+
+// 	.panel-header {
+// 		background-color: #95C88D;
+// 	}
+// 		.people-connect {
+// 			.flex-container {
+// 				display: -webkit-box;
+// 				display: -moz-box;
+// 				display: -ms-flexbox;
+// 				display: -webkit-flex;
+// 				display: flex;
+// 				-webkit-flex-flow: row wrap;
+// 				justify-content: space-around;
+// 				.flex-item {
+// 					display:inline-block;
+// 				    width: 35px;
+// 				    height: 35px;
+// 				    line-height: 35px;
+// 				    background: #95C88D;
+// 				    border:  solid #95C88D;
+// 				    text-align: center;
+				    
+// 				}
+// 			}
+// 		}
+// }	
+
+
+// .info-button {
+// 	margin: 10px 0px 15px 15px;
+// 	display:inline-block;
+// 	width: 200px;
+// 	height: 40px;
+// 	line-height: 40px;
+// 	background: #efefef;
+// 	border:  solid #efefef;
+// 	text-align: center;
+// 	&:hover {
+// 		border:  solid #C52028;
+// 		cursor: pointer;
+// 		}
+// 	&:active {
+// 		background-color: #95C88D;
+// 		border: solid #95C88D;
+// 	}
+// }
+// .info-absolute {
+// 	border: 1px solid black;
+// 	position: absolute;
+// 	background-color: #C2C2C2;
+// }
+
+
+
+.OFFpanel {
+	position: relative;
 	width: 750px;
-	height: 350px;
+	min-height: 350px;
 	border: solid black;
 	margin-top: 100px;
-
 	.panel-header {
 		width: 100%;
 		height: 25px;
-		background-color: #95C88D;
+		background-color: #DBDBDB;
 		span {
 			margin-left: 50px;
 			font-size: 18px;
 		}
 	}
-	.float-el {
-		.panel-button {
-			border: solid #DBDBDB;
-			background-color: #DBDBDB;
-			text-align: center;
-			line-height: 25px;
-			cursor: pointer;
-			
-			width: 200px;
-			height: 25px;
-			float: right;
-			margin-right: 100px;
-			margin-top: 20px;
-			&:hover {
-				border: solid #C52028;
+	.panel-content{
+		section {
+			margin-top: 15px;
+			.section1{
+				min-width: 150px;
+				display: inline-block;
+				div {
+					display: inline-block;
+					margin-left: 5px;
+				}
+				img {
+					width: 15px;
+					height: 15px;
+					margin-left: 5px;
+					cursor: pointer;
+				}
 			}
-		}
-		.panel-cod {
-			float: left;
-			margin-top: 25px;
-			span {
-				border: solid #95C88D;
-				padding: 2px 2px 2px 2px;
+			.panel-show {
+				margin-top: 15px;
+				padding: 5px 5px 5px 5px;
+				// width: 550px;
+				background-color: #BABABA;
 			}
-		}
-	}
-	.panel-metod {
-		margin-top: 40px;
-		.panel-metod-select {
-			display:inline-block;
-			width: 200px;
-			height: 40px;
-			line-height: 40px;
-			background: #95C88D;
-			border:  solid #95C88D;
-			text-align: center;
-			margin-left: 20px;
-		}
-	}
-	.panel-people {
-		margin-top: 20px;
-		.people-kol-vo {
-			margin-top: 10px;
-		}
-		.people-connect {
-			.flex-container {
-				display: -webkit-box;
-				display: -moz-box;
-				display: -ms-flexbox;
-				display: -webkit-flex;
-				display: flex;
-				-webkit-flex-flow: row wrap;
-				justify-content: space-around;
-				.flex-item {
-					display:inline-block;
-				    width: 35px;
-				    height: 35px;
-				    line-height: 35px;
-				    background: #95C88D;
-				    border:  solid #95C88D;
-				    text-align: center;
-				    
+			.product-show {
+				margin-top: 15px;
+				padding: 5px 5px 5px 5px;
+				width: 550px;
+				background-color: #BABABA;
+			}
+			.cart-show {
+				background-color: #BABABA;
+				width: 300px;
+				margin-top: 15px;
+				padding: 5px 5px 5px 5px;
+				.karta-1{
+					float: left;
+				}
+				.karta-2 {
+					float: right;
+				}
+			}
+			.metod-show {
+				background-color: #BABABA;
+				padding: 5px 5px 5px 5px;
+				span {
+					width: 200px;
+				}
+				.max-point {
+					margin-top: 10px;
 				}
 			}
 		}
 	}
-	.panel-button-go {
-			border: solid #DBDBDB;
-			background-color: #DBDBDB;
-			text-align: center;
-			line-height: 25px;
-			cursor: pointer;
-			
-			width: 250px;
-			height: 25px;
-			float: right;
-			margin-right: 75px;
-			margin-top: 10px;
-			&:hover {
-				border: solid #C52028;
-			}
+}
+
+.button {
+	cursor: pointer;
+	width: 100px;
+	height: 40px;
+	// line-height: 40px;
+	background: #efefef;
+	border:  solid #efefef;
+	text-align: center;
+	&:hover {
+		border:  solid #C52028;
+	}
+	&:active {
+		background-color: #95C88D;
+		border: solid #95C88D;
 	}
 }
+.tofleivorBT {
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
 ///////////////END-degust.html/////////////
 
 ///////////////grafik.html////////////////
@@ -497,7 +537,6 @@ margin-top: 10px;
 	margin-left: 35px;
 }
 .custom-label  span {
-
 			    display:inline-block;
 			    width: 15px;
 			    height: 15px;
@@ -508,12 +547,13 @@ margin-top: 10px;
 			    	border:  solid #C52028;
 			    	cursor: pointer;
 			    }
-			}
+			
 				input[type=radio]:checked + span {
 				background-color: #95C88D;
 				border: solid #95C88D;
 			}
+		}
 .custom-label > input[type=radio] {
 				display: none;
-
-}
+			}
+		

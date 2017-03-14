@@ -39,9 +39,9 @@ angular.module("app")
 
 
 // GRAFIK-start//////////////////////////////////////////////////////////////////
-        $scope.grafik = [];
-        var g = $scope.grafik;
-        g.g =1;
+        // $scope.grafik = [];
+        // var g = $scope.grafik;
+        // g.g ="1";
 
         // if (g.g==1) {
         //     $("#green").css({
@@ -52,24 +52,27 @@ angular.module("app")
      $scope.drawGrafik = ()=> {
         $scope.grafik = [];
         var g = $scope.grafik;
-        g.g =1;
+        g.g ="1";
 
         $scope.labelsRadar =["Винный аромат", "Цветочный аромат", "Окисленный", "Интенсивность вкуса", "Кислотный вкус", "Типичность вкуса", "Длительность вкуса"];
         $scope.dataRadar = [
-        [r.vin, r.cvet, r.okis, r.intens, r.kislot, r.tip, r.dlit],
+        // [r.vin, r.cvet, r.okis, r.intens, r.kislot, r.tip, r.dlit],
+        [6,4,6,2,8,3,7],
         [0,0,0,0,0,10]
         ];
 
         $scope.labelsChart =["Винный аромат", "Цветочный аромат", "Окисленный", "Интенсивность вкуса", "Кислотный вкус", "Типичность вкуса", "Длительность вкуса"];
         $scope.dataChart = [
         [r.vin, r.cvet, r.okis, r.intens, r.kislot, r.tip, r.dlit],
+        [2,4,6,2,8,3,5],
         [0,0,0,0,0,0]
         ];
 
         $scope.labelsArea =["Винный аромат", "Цветочный аромат", "Окисленный"];
-        $scope.dataArea = [43,23,42];
+        $scope.dataArea = [2,4,6,2,8,3];
 
   }
+  $scope.drawGrafik();
 //GRAFIK-end/////////////////////////////////////////////////////////////////
 
 //RANDOM-start/////////////////////////////////////////////////////////////////
