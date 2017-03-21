@@ -148,7 +148,6 @@
 		</div>
 	</div> -->
 
-
 	<div class="panel-off">
 		<div class="OFFpanel" ng-show="show==1">
 
@@ -162,7 +161,6 @@
 					<div class="section1">
 						<img src="{{set?'/assets/img/minus.png':'/assets/img/plus.png'}}" ng-click="set=!set">
 						<div>Панель:{{panel.number}} Участников: {{panel.people}}</div>
-						
 					</div>
 
 					<div class="panel-show" ng-show="set">
@@ -170,7 +168,6 @@
 						<input type="number" ng-model="panel.number" >
 						Количество участников
 						<input type="number" ng-model="panel.people" >
-
 					</div>
 				</section>
 <!-- SECTION ------------------------------------------>
@@ -245,7 +242,7 @@
 							</label> 
 							<label class="my-custom-label">
 							    <input  type="radio" ng-model="panel.metod" value="парного сравнивния" />
-							    <span>Метод парного сравнивния</span>
+							    <span>"парного сравнивния"</span>
 							</label>
 							<label class="my-custom-label" >
 							    <input  type="radio" ng-model="panel.metod" value="триангуляции" />

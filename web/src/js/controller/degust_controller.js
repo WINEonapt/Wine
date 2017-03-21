@@ -6,73 +6,36 @@ angular.module("app")
       $rootScope.lang = lang
     }
     
-        $scope.rad =[];
-        var r = $scope.rad;
-
-        $scope.people = [];
-        var people = $scope.people;
-        // people = 2;
-        // r.vin =10;
-        // r.cvet = 0;
-        // r.trav = 0;
-        // r.ovosh = 0;
-        // r.miner = 0; 
-        // r.muskat = 0;
-        // r.greip = 0;
-        // r.kruj = 0;
-        // r.okis = 0;
-        // r.efir = 0;
-        // r.intens = 0;
-        // r.kislot = 0;
-        // r.slad = 0;
-        // r.tip = 0;
-        // r.dlit = 0;
-        $scope.show=1;
+        $scope.val =[];
+        var v = $scope.val;
+        $scope.show =1 ;
 
     $scope.goFuck = ()=> {
-    // for ( var key in r) {
-            // console.log("Ключ: " + key + " значение: " + r[key])
-        // }
-        // var g = $scope.graf.value;
-        console.log($scope.show)
+        // console.log(v.vish)
     }
 
-
 // GRAFIK-start//////////////////////////////////////////////////////////////////
-        // $scope.grafik = [];
-        // var g = $scope.grafik;
-        // g.g ="1";
-
-        // if (g.g==1) {
-        //     $("#green").css({
-        //         background: "red"
-        //     })
-        // }
-
-     $scope.drawGrafik = ()=> {
+    $scope.drawGrafik = ()=> {
         $scope.grafik = [];
         var g = $scope.grafik;
         g.g ="1";
 
-        $scope.labelsRadar =["Винный аромат", "Цветочный аромат", "Окисленный", "Интенсивность вкуса", "Кислотный вкус", "Типичность вкуса", "Длительность вкуса"];
+        $scope.labelsRadar =["Вишня", "Гранат", "Смородина", "Ежевика", "Слива", "Конфитюр", "Сафьян", "Черный шоколад", "Изюм", "Сливки", "Корица", "Стручковая ваниль", "Вкус", "Послевкусие", "Общее впечатление"];
         $scope.dataRadar = [
-        // [r.vin, r.cvet, r.okis, r.intens, r.kislot, r.tip, r.dlit],
-        [6,4,6,2,8,3,7],
-        [0,0,0,0,0,10]
+        [v.vish, v.gran, v.smor, v.ej, v.sliv, v.konf, v.saf, v.black, v.izum, v.slivki, v.kor, v.vanil, v.vkus, v.poslevkus, v.vpech],
+        [0,0,0,0,0,8]
         ];
 
-        $scope.labelsChart =["Винный аромат", "Цветочный аромат", "Окисленный", "Интенсивность вкуса", "Кислотный вкус", "Типичность вкуса", "Длительность вкуса"];
+        $scope.labelsChart =["Вишня", "Гранат", "Смородина", "Ежевика", "Слива", "Конфитюр", "Сафьян", "Черный шоколад", "Изюм", "Сливки", "Корица", "Стручковая ваниль", "Вкус", "Послевкусие", "Общее впечатление"];
         $scope.dataChart = [
-        [r.vin, r.cvet, r.okis, r.intens, r.kislot, r.tip, r.dlit],
-        [2,4,6,2,8,3,5],
+        [v.vish, v.gran, v.smor, v.ej, v.sliv, v.konf, v.saf, v.black, v.izum, v.slivki, v.kor, v.vanil, v.vkus, v.poslevkus, v.vpech],
         [0,0,0,0,0,0]
         ];
 
-        $scope.labelsArea =["Винный аромат", "Цветочный аромат", "Окисленный"];
-        $scope.dataArea = [2,4,6,2,8,3];
-
-  }
-  $scope.drawGrafik();
+        $scope.labelsArea =["Вишня", "Гранат", "Смородина", "Ежевика", "Слива", "Конфитюр", "Сафьян", "Черный шоколад", "Изюм", "Сливки", "Корица", "Стручковая ваниль", "Вкус", "Послевкусие", "Общее впечатление"];
+        $scope.dataArea = [v.vish, v.gran, v.smor, v.ej, v.sliv, v.konf, v.saf, v.black, v.izum, v.slivki, v.kor, v.vanil, v.vkus, v.poslevkus, v.vpech];
+    }
+    $scope.drawGrafik();
 //GRAFIK-end/////////////////////////////////////////////////////////////////
 
 //RANDOM-start/////////////////////////////////////////////////////////////////
