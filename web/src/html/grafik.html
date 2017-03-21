@@ -1,20 +1,17 @@
 <div class="wrapper"> 
 	<div class="select-graf">
-		Выберите график:
-		<div class="options">
 				<label class="graf-label">
 				    <input type="radio" ng-model="grafik.g" value="1" />
 				    <span id="green">Radar Chart</span>
-				</label> <br>
+				</label>
 				<label class="graf-label">
 				    <input type="radio" ng-model="grafik.g" value="2" />
 				    <span>Bar Chart</span>
-				</label> <br>
+				</label> 
 				<label class="graf-label">
 				    <input type="radio" ng-model="grafik.g" value="3" />
 				    <span>Polar Area Chart</span>
-				</label> <br>
-		</div>
+				</label> 
 	</div>
 	<div class="graf-sad">
 			<div class="graf-radar"  ng-show="grafik.g==1">
@@ -34,23 +31,4 @@
 			</div>
 	</div>
 	<div style="clear: both;"></div>
-
-		<!-- 	<table width="200" border="1" cellspacing="0" cellpadding="5" align="center"><tr><th width="300">ОЦЕНКА</th></tr></table> -->
-
-
-		<!-- <table width="200" border="1" cellspacing="0" cellpadding="5" align="center">
-				<th>ОПИСАНИЕ</th>
-				<th>ОЦЕНКА</th>
-				<th>ОПИСАНИЕ</th>
-				<th>ОЦЕНКА</th>
-
-			<tr>	<td >Винный</td><td>{{rad.vin}}</td><td >Цветочный</td><td>{{rad.cvet}}</td>			</tr>
-			<tr>	<td >Травянистый</td><td>{{rad.trav}}</td><td >Овощной</td><td>{{rad.ovosh}}</td>		</tr>
-			<tr>	<td >Минеральный</td><td>{{rad.miner}}</td>	<td >Мускатный</td><td>{{rad.muskat}}</td> 	</tr> 
-			<tr>	<td >Грейпфрут</td><td>{{rad.greip}}</td><td >Крыжовник</td><td>{{rad.kruj}}</td>   		</tr>
-			<tr>	<td >Окисленный</td><td>{{rad.okis}}</td><td >Эфирный</td><td>{{rad.efir}}</td>   	</tr>	
-			<tr>	<td >Интенсивность</td><td>{{rad.intens}}</td><td >Кислотность</td><td>{{rad.kislot}}</td>   </tr>	
-			<tr>	<td >Сладость</td><td>{{rad.slad}}</td> <td >Типичность </td><td>{{rad.tip}}</td>	 	</tr>
-			<tr>	<td >Длительность</td><td>{{rad.dlit}}</td> <td >Длительность</td><td>{{rad.dlit}}</td>	</tr>	    	
-		</table> -->
  </div>

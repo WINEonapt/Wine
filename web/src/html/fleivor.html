@@ -186,14 +186,14 @@
 		<button ui-sref="^.grafik" ng-click="drawGrafik()" >Все верно</button> -->
 
 					<!-- 	NEW TABLE -->
-
+<button ng-click="goFuck()">blabla</button>
 			<table width="800px" border="1" cellspacing="0" cellpadding="5" align="center">
 				<tr>
 					<th style="text-align:left">Фамилия и имя дегустатора</th>
 				</tr>
-					<table width="800px" border="1" cellspacing="0" cellpadding="5" align="center"><tr><th style="text-align:left">Название вина:</th></tr></table>
-					<table width="800px" border="1" cellspacing="0" cellpadding="5" align="center"><tr><th style="text-align:left">Год урожая:</th></tr></table>
-					<table width="800px" border="1" cellspacing="0" cellpadding="5" align="center"><tr><th style="text-align:left">Производитель:</th></tr></table>
+					<table width="800px" border="1" cellspacing="0" cellpadding="5" align="center"><tr><th style="text-align:left">Название вина: {{panel.name}} </th></tr></table>
+					<table width="800px" border="1" cellspacing="0" cellpadding="5" align="center"><tr><th style="text-align:left">Год урожая: {{panel.god}}</th></tr></table>
+					<table width="800px" border="1" cellspacing="0" cellpadding="5" align="center"><tr><th style="text-align:left">Производитель: {{panel.proizvod}}</th></tr></table>
 					<table width="800px" border="1" cellspacing="0" cellpadding="5" align="center">
 						<tr>
 							<th width="250px"> Флейвор(дискрипторы)</th>
@@ -206,31 +206,31 @@
 							 <td width="223px">Вишня</td>
 							 <td width="550px">
 									<label class="custom-label">
-										<input name="test1" ng-model="test1" type="radio"  value="1" />
+										<input ng-model="val.vish" type="radio"  value="1" />
 										<span class="flex-iteme">1</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test1" ng-model="test1" type="radio"  value="2" />
+										<input ng-model="val.vish" type="radio"  value="2" />
 										<span class="flex-iteme">2</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test1" ng-model="test1" type="radio"  value="3" />
+										<input ng-model="val.vish" type="radio"  value="3" />
 										<span class="flex-iteme">3</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test1" ng-model="test1" type="radio"  value="4" />
+										<input ng-model="val.vish" type="radio"  value="4" />
 										<span class="flex-iteme">4</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test1" ng-model="test1" type="radio"  value="5" />
+										<input ng-model="val.vish" type="radio"  value="5" />
 										<span class="flex-iteme">5</span>
 									</label> 
 									<label class="custom-label">
-										<input  name="test1" ng-model="test1" type="radio"  value="6" />
+										<input  ng-model="val.vish" type="radio"  value="6" />
 										<span class="flex-iteme">6</span>
 									</label> 
 									<label class="custom-label">
-										<input  name="test1" ng-model="test1" type="radio"  value="7" />
+										<input  ng-model="val.vish" type="radio"  value="7" />
 										<span class="flex-iteme">7</span>
 									</label> 
 							 </td>
@@ -243,31 +243,31 @@
 							 <td width="550px">
 								<div >
 									<label class="custom-label">
-										<input name="test2" ng-model="test2" type="radio"  value="1" />
+										<input ng-model="val.gran" type="radio"  value="1" />
 										<span class="flex-iteme">1</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test2" ng-model="test2" type="radio"  value="2" />
+										<input ng-model="val.gran" type="radio"  value="2" />
 										<span class="flex-iteme">2</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test2" ng-model="test2" type="radio"  value="3" />
+										<input ng-model="val.gran" type="radio"  value="3" />
 										<span class="flex-iteme">3</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test2" ng-model="test2" type="radio"  value="4" />
+										<input ng-model="val.gran" type="radio"  value="4" />
 										<span class="flex-iteme">4</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test2" ng-model="test2" type="radio"  value="5" />
+										<input ng-model="val.gran" type="radio"  value="5" />
 										<span class="flex-iteme">5</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test2" ng-model="test2" type="radio"  value="6" />
+										<input ng-model="val.gran" type="radio"  value="6" />
 										<span class="flex-iteme">6</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test2" ng-model="test2" type="radio"  value="7" />
+										<input ng-model="val.gran" type="radio"  value="7" />
 										<span class="flex-iteme">7</span>
 									</label> 
 								</div>
@@ -281,31 +281,31 @@
 							 <td width="550px">
 								<div >
 									<label class="custom-label">
-										<input name="test3" ng-model="test3" type="radio"  value="1" />
+										<input ng-model="val.smor" type="radio"  value="1" />
 										<span class="flex-iteme">1</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test3" ng-model="test3" type="radio"  value="2" />
+										<input ng-model="val.smor" type="radio"  value="2" />
 										<span class="flex-iteme">2</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test3" ng-model="test3" type="radio"  value="3" />
+										<input ng-model="val.smor" type="radio"  value="3" />
 										<span class="flex-iteme">3</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test3" ng-model="test3" type="radio"  value="4" />
+										<input ng-model="val.smor" type="radio"  value="4" />
 										<span class="flex-iteme">4</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test3" ng-model="test3" type="radio"  value="5" />
+										<input ng-model="val.smor" type="radio"  value="5" />
 										<span class="flex-iteme">5</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test3" ng-model="test3" type="radio"  value="6" />
+										<input ng-model="val.smor" type="radio"  value="6" />
 										<span class="flex-iteme">6</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test3" ng-model="test3" type="radio"  value="7" />
+										<input ng-model="val.smor" type="radio"  value="7" />
 										<span class="flex-iteme">7</span>
 									</label> 
 								</div>
@@ -319,31 +319,31 @@
 							 <td width="550px">
 								<div >
 									<label class="custom-label">
-										<input name="test4" ng-model="test4" type="radio"  value="1" />
+										<input ng-model="val.ej" type="radio"  value="1" />
 										<span class="flex-iteme">1</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test4" ng-model="test4" type="radio"  value="2" />
+										<input ng-model="val.ej" type="radio"  value="2" />
 										<span class="flex-iteme">2</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test4" ng-model="test4" type="radio"  value="3" />
+										<input ng-model="val.ej" type="radio"  value="3" />
 										<span class="flex-iteme">3</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test4" ng-model="test4" type="radio"  value="4" />
+										<input ng-model="val.ej" type="radio"  value="4" />
 										<span class="flex-iteme">4</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test4" ng-model="test4" type="radio"  value="5" />
+										<input ng-model="val.ej" type="radio"  value="5" />
 										<span class="flex-iteme">5</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test4" ng-model="test4" type="radio"  value="6" />
+										<input ng-model="val.ej" type="radio"  value="6" />
 										<span class="flex-iteme">6</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test4" ng-model="test4" type="radio"  value="7" />
+										<input ng-model="val.ej" type="radio"  value="7" />
 										<span class="flex-iteme">7</span>
 									</label> 
 								</div>
@@ -357,31 +357,31 @@
 							 <td width="550px">
 								<div >
 									<label class="custom-label">
-										<input name="test5" ng-model="test5" type="radio"  value="1" />
+										<input  ng-model="val.sliv" type="radio"  value="1" />
 										<span class="flex-iteme">1</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test5" ng-model="test5" type="radio"  value="2" />
+										<input  ng-model="val.sliv" type="radio"  value="2" />
 										<span class="flex-iteme">2</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test5" ng-model="test5" type="radio"  value="3" />
+										<input  ng-model="val.sliv" type="radio"  value="3" />
 										<span class="flex-iteme">3</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test5" ng-model="test5" type="radio"  value="4" />
+										<input  ng-model="val.sliv" type="radio"  value="4" />
 										<span class="flex-iteme">4</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test5" ng-model="test5" type="radio"  value="5" />
+										<input  ng-model="val.sliv" type="radio"  value="5" />
 										<span class="flex-iteme">5</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test5" ng-model="test5" type="radio"  value="6" />
+										<input  ng-model="val.sliv" type="radio"  value="6" />
 										<span class="flex-iteme">6</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test5" ng-model="test5" type="radio"  value="7" />
+										<input  ng-model="val.sliv" type="radio"  value="7" />
 										<span class="flex-iteme">7</span>
 									</label> 
 								</div>
@@ -395,31 +395,31 @@
 							 <td width="550px">
 								<div >
 									<label class="custom-label">
-										<input name="test6" ng-model="test6" type="radio"  value="1" />
+										<input ng-model="val.konf" type="radio"  value="1" />
 										<span class="flex-iteme">1</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test6" ng-model="test6" type="radio"  value="2" />
+										<input ng-model="val.konf" type="radio"  value="2" />
 										<span class="flex-iteme">2</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test6 " ng-model="test6" type="radio"  value="3" />
+										<input name="test6 " ng-model="val.konf" type="radio"  value="3" />
 										<span class="flex-iteme">3</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test6" ng-model="test6" type="radio"  value="4" />
+										<input ng-model="val.konf" type="radio"  value="4" />
 										<span class="flex-iteme">4</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test6" ng-model="test6" type="radio"  value="5" />
+										<input ng-model="val.konf" type="radio"  value="5" />
 										<span class="flex-iteme">5</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test6" ng-model="test6" type="radio"  value="6" />
+										<input ng-model="val.konf" type="radio"  value="6" />
 										<span class="flex-iteme">6</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test6" ng-model="test6" type="radio"  value="7" />
+										<input ng-model="val.konf" type="radio"  value="7" />
 										<span class="flex-iteme">7</span>
 									</label> 
 								</div>
@@ -433,31 +433,31 @@
 							 <td width="550px">
 								<div >
 									<label class="custom-label">
-										<input name="test7" ng-model="test7" type="radio"  value="1" />
+										<input ng-model="val.saf" type="radio"  value="1" />
 										<span class="flex-iteme">1</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test7" ng-model="test7" type="radio"  value="2" />
+										<input ng-model="val.saf" type="radio"  value="2" />
 										<span class="flex-iteme">2</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test7" ng-model="test7" type="radio"  value="3" />
+										<input ng-model="val.saf" type="radio"  value="3" />
 										<span class="flex-iteme">3</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test7" ng-model="test7" type="radio"  value="4" />
+										<input ng-model="val.saf" type="radio"  value="4" />
 										<span class="flex-iteme">4</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test7" ng-model="test7" type="radio"  value="5" />
+										<input ng-model="val.saf" type="radio"  value="5" />
 										<span class="flex-iteme">5</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test7" ng-model="test7" type="radio"  value="6" />
+										<input ng-model="val.saf" type="radio"  value="6" />
 										<span class="flex-iteme">6</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test7" ng-model="test7" type="radio"  value="7" />
+										<input ng-model="val.saf" type="radio"  value="7" />
 										<span class="flex-iteme">7</span>
 									</label> 
 								</div>
@@ -471,31 +471,31 @@
 							 <td width="550px">
 								<div >
 									<label class="custom-label">
-										<input name="test8" ng-model="test8" type="radio"  value="1" />
+										<input ng-model="val.black" type="radio"  value="1" />
 										<span class="flex-iteme">1</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test8" ng-model="test8" type="radio"  value="2" />
+										<input ng-model="val.black" type="radio"  value="2" />
 										<span class="flex-iteme">2</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test8" ng-model="test8" type="radio"  value="3" />
+										<input ng-model="val.black" type="radio"  value="3" />
 										<span class="flex-iteme">3</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test8" ng-model="test8" type="radio"  value="4" />
+										<input ng-model="val.black" type="radio"  value="4" />
 										<span class="flex-iteme">4</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test8" ng-model="test8" type="radio"  value="5" />
+										<input ng-model="val.black" type="radio"  value="5" />
 										<span class="flex-iteme">5</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test8" ng-model="test8" type="radio"  value="6" />
+										<input ng-model="val.black" type="radio"  value="6" />
 										<span class="flex-iteme">6</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test8" ng-model="test8" type="radio"  value="7" />
+										<input ng-model="val.black" type="radio"  value="7" />
 										<span class="flex-iteme">7</span>
 									</label> 
 								</div>
@@ -509,31 +509,31 @@
 							 <td width="550px">
 								<div >
 									<label class="custom-label">
-										<input name="test9" ng-model="test9" type="radio"  value="1" />
+										<input ng-model=val.izum type="radio"  value="1" />
 										<span class="flex-iteme">1</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test9" ng-model="test9" type="radio"  value="2" />
+										<input ng-model=val.izum type="radio"  value="2" />
 										<span class="flex-iteme">2</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test9" ng-model="test9" type="radio"  value="3" />
+										<input ng-model=val.izum type="radio"  value="3" />
 										<span class="flex-iteme">3</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test9" ng-model="test9" type="radio"  value="4" />
+										<input ng-model=val.izum type="radio"  value="4" />
 										<span class="flex-iteme">4</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test9" ng-model="test9" type="radio"  value="5" />
+										<input ng-model=val.izum type="radio"  value="5" />
 										<span class="flex-iteme">5</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test9" ng-model="test9" type="radio"  value="6" />
+										<input ng-model=val.izum type="radio"  value="6" />
 										<span class="flex-iteme">6</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test9" ng-model="test9" type="radio"  value="7" />
+										<input ng-model=val.izum type="radio"  value="7" />
 										<span class="flex-iteme">7</span>
 									</label> 
 								</div>
@@ -547,31 +547,31 @@
 							 <td width="550px">
 								<div >
 									<label class="custom-label">
-										<input name="test10" ng-model="test10" type="radio"  value="1" />
+										<input ng-model="val.slivki" type="radio"  value="1" />
 										<span class="flex-iteme">1</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test10" ng-model="test10" type="radio"  value="2" />
+										<input ng-model="val.slivki" type="radio"  value="2" />
 										<span class="flex-iteme">2</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test10" ng-model="test10" type="radio"  value="3" />
+										<input ng-model="val.slivki" type="radio"  value="3" />
 										<span class="flex-iteme">3</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test10" ng-model="test10" type="radio"  value="4" />
+										<input ng-model="val.slivki" type="radio"  value="4" />
 										<span class="flex-iteme">4</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test10" ng-model="test10" type="radio"  value="5" />
+										<input ng-model="val.slivki" type="radio"  value="5" />
 										<span class="flex-iteme">5</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test10" ng-model="test10" type="radio"  value="6" />
+										<input ng-model="val.slivki" type="radio"  value="6" />
 										<span class="flex-iteme">6</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test10" ng-model="test10" type="radio"  value="7" />
+										<input ng-model="val.slivki" type="radio"  value="7" />
 										<span class="flex-iteme">7</span>
 									</label> 
 								</div>
@@ -585,31 +585,31 @@
 							 <td width="550px">
 								<div >
 									<label class="custom-label">
-										<input name="test11" ng-model="test11" type="radio"  value="1" />
+										<input ng-model="val.kor" type="radio"  value="1" />
 										<span class="flex-iteme">1</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test11" ng-model="test11" type="radio"  value="2" />
+										<input ng-model="val.kor" type="radio"  value="2" />
 										<span class="flex-iteme">2</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test11" ng-model="test11" type="radio"  value="3" />
+										<input ng-model="val.kor" type="radio"  value="3" />
 										<span class="flex-iteme">3</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test11" ng-model="test11" type="radio"  value="4" />
+										<input ng-model="val.kor" type="radio"  value="4" />
 										<span class="flex-iteme">4</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test11" ng-model="test11"  type="radio"  value="5" />
+										<input ng-model="val.kor"  type="radio"  value="5" />
 										<span class="flex-iteme">5</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test11" ng-model="test11" type="radio"  value="6" />
+										<input ng-model="val.kor" type="radio"  value="6" />
 										<span class="flex-iteme">6</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test11" ng-model="test11" type="radio"  value="7" />
+										<input ng-model="val.kor" type="radio"  value="7" />
 										<span class="flex-iteme">7</span>
 									</label> 
 								</div>
@@ -623,31 +623,31 @@
 							 <td width="550px">
 								<div >
 									<label class="custom-label">
-										<input name="test12" ng-model="test12" type="radio"  value="1" />
+										<input ng-model="val.vanil" type="radio"  value="1" />
 										<span class="flex-iteme">1</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test12" ng-model="test12" type="radio"  value="2" />
+										<input ng-model="val.vanil" type="radio"  value="2" />
 										<span class="flex-iteme">2</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test12" ng-model="test12" type="radio"  value="3" />
+										<input ng-model="val.vanil" type="radio"  value="3" />
 										<span class="flex-iteme">3</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test12" ng-model="test12" type="radio"  value="4" />
+										<input ng-model="val.vanil" type="radio"  value="4" />
 										<span class="flex-iteme">4</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test12" ng-model="test12" type="radio"  value="5" />
+										<input ng-model="val.vanil" type="radio"  value="5" />
 										<span class="flex-iteme">5</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test12" ng-model="test12" type="radio"  value="6" />
+										<input ng-model="val.vanil" type="radio"  value="6" />
 										<span class="flex-iteme">6</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test12" ng-model="test12" type="radio"  value="7" />
+										<input ng-model="val.vanil" type="radio"  value="7" />
 										<span class="flex-iteme">7</span>
 									</label> 
 								</div>
@@ -775,31 +775,31 @@
 							 <td width="550px"><center><b>Шкала оценки интенсивности</b></center> <br>
 								<div >
 									<label class="custom-label">
-										<input name="test21" ng-model="test21" type="radio"  value="1" />
+										<input  ng-model="val.vkus" type="radio"  value="1" />
 										<span class="flex-iteme">1</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test121" ng-model="test21" type="radio"  value="2" />
+										<input name="test121" ng-model="val.vkus" type="radio"  value="2" />
 										<span class="flex-iteme">2</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test21" ng-model="test21" type="radio"  value="3" />
+										<input  ng-model="val.vkus" type="radio"  value="3" />
 										<span class="flex-iteme">3</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test21" ng-model="test21" type="radio"  value="4" />
+										<input  ng-model="val.vkus" type="radio"  value="4" />
 										<span class="flex-iteme">4</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test21" ng-model="test21" type="radio"  value="5" />
+										<input  ng-model="val.vkus" type="radio"  value="5" />
 										<span class="flex-iteme">5</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test21" ng-model="test21" type="radio"  value="6" />
+										<input  ng-model="val.vkus" type="radio"  value="6" />
 										<span class="flex-iteme">6</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test21" ng-model="test21" type="radio"  value="7" />
+										<input  ng-model="val.vkus" type="radio"  value="7" />
 										<span class="flex-iteme">7</span>
 									</label> 
 								</div>
@@ -813,31 +813,31 @@
 							 <td width="550px"><center><b>Шкала оценки интенсивности</b></center> <br>
 								<div >
 									<label class="custom-label">
-										<input name="test31" ng-model="test31" type="radio"  value="1" />
+										<input ng-model="val.poslevkus" type="radio"  value="1" />
 										<span class="flex-iteme">1</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test131" ng-model="test31" type="radio"  value="2" />
+										<input name="test131" ng-model="val.poslevkus" type="radio"  value="2" />
 										<span class="flex-iteme">2</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test31" ng-model="test31" type="radio"  value="3" />
+										<input ng-model="val.poslevkus" type="radio"  value="3" />
 										<span class="flex-iteme">3</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test31" ng-model="test31" type="radio"  value="4" />
+										<input ng-model="val.poslevkus" type="radio"  value="4" />
 										<span class="flex-iteme">4</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test31" type="radio"  value="5" />
+										<input type="radio"  value="5" />
 										<span class="flex-iteme">5</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test31" ng-model="test31" type="radio"  value="6" />
+										<input ng-model="val.poslevkus" type="radio"  value="6" />
 										<span class="flex-iteme">6</span>
 									</label> 
 									<label class="custom-label">
-										<input name="test31" ng-model="test31" type="radio"  value="7" />
+										<input ng-model="val.poslevkus" type="radio"  value="7" />
 										<span class="flex-iteme">7</span>
 									</label> 
 								</div>
@@ -851,21 +851,21 @@
 							 <td width="550px"> <br>
 								<div ><center>
 									<label class="custom-label">
-										<input name="test41" ng-model="test41" type="radio"  value="1" /> 
+										<input ng-model="val.vpech" type="radio"  value="1" /> 
 										<span class="flex-iteme">1</span> - хорошее
 									</label> 
 									<label class="custom-label">
-										<input name="test41" ng-model="test41" type="radio"  value="2" />
+										<input ng-model="val.vpech" type="radio"  value="2" />
 										<span class="flex-iteme ">2 </span> - среднее
 									</label> 
 									<label class="custom-label">
-										<input name="test41" ng-model="test41" type="radio"  value="3" />
+										<input ng-model="val.vpech" type="radio"  value="3" />
 										<span class="flex-iteme">3 </span> - плохое
 									</label> </center>
 								</div>
 							 </td>
 						</tr>
 			 	</table>
-			 	<button ui-sref="^.grafik" ng-click="drawGrafik()" >Все верно</button>			 				 				 	
 </table>
+<button ui-sref="^.grafik" ng-click="drawGrafik()" class="podt">Подтверждение</button>	
 </div>

@@ -1,6 +1,8 @@
 body {
 	padding: 0;
 	margin: 0;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
 }
 .wrapper {
 	width: 800px;
@@ -45,15 +47,15 @@ body {
 		color: #C52028;
 		background-color: black; 
 		border: solid #C52028;
-		width: 300px;
+		width: 350px;
 		height: 37px;
 		white-space: nowrap;
 		text-align: center;
 		margin: 150px 0px 0px 70px;
 
 		&:hover {
-			background-color: #C52028;
-			color: black;
+			// background-color: #C52028;
+			// color: black;
 		}
 	}
 }
@@ -240,19 +242,21 @@ body {
 		.my-custom-label  span {
 		display:inline-block;
 		width: 100px;
-		height: 40px;
-		line-height: 40px;
-		background: #efefef;
-		border:  solid #efefef;
+		height: 20px;
+		line-height: 20px;
+		border-bottom: solid white;
+		// background: #efefef;
+		// border:  solid #efefef;
 		text-align: center;
 		&:hover {
-		border:  solid #C52028;
+		border-bottom: solid #3045DF;
 			cursor: pointer;
 		}
 		}
 		input[type=radio]:checked + span {
-			background-color: #95C88D;
-			border: solid #95C88D;
+			// background-color: #95C88D;
+			// border: solid #95C88D;
+			border-bottom: solid #3045DF;
 		}
 	// .panel-button {
 	// 	border: solid #DBDBDB;
@@ -421,19 +425,18 @@ body {
 				}
 			}
 			.panel-show {
-				margin-top: 15px;
+				// margin-top: 15px;
 				padding: 5px 5px 5px 5px;
-				// width: 550px;
-				background-color: #BABABA;
+				// background-color: #BABABA;
 			}
 			.product-show {
 				margin-top: 15px;
 				padding: 5px 5px 5px 5px;
 				width: 550px;
-				background-color: #BABABA;
+				// background-color: #BABABA;
 			}
 			.cart-show {
-				background-color: #BABABA;
+				// background-color: #BABABA;
 				width: 300px;
 				margin-top: 15px;
 				padding: 5px 5px 5px 5px;
@@ -445,7 +448,7 @@ body {
 				}
 			}
 			.metod-show {
-				background-color: #BABABA;
+				// background-color: #BABABA;
 				padding: 5px 5px 5px 5px;
 				span {
 					width: 200px;
@@ -485,12 +488,8 @@ body {
 ///////////////grafik.html////////////////
 
 .select-graf {
-	margin-top: 10px;
-	float: left;
-	.options {
-		margin-top: 10px;
-		// margin-left: 85px;
-		padding-bottom: 10px;
+	width: 630px;
+	margin: 15px auto  15px auto;
 		.graf-label {
 			input[type=radio] {
 				display: none;
@@ -514,12 +513,12 @@ body {
 				border: solid #95C88D;
 			}
 		}
-	}
 }
 .graf-sad {
-width: 580px;
-float: right;
-margin-top: 10px;
+// width: 630px;
+// overflow-y: hidden;
+// soverflow-x: hidden;
+// margin-top: 10px;
 }
 
 //////////////END-grafik.html
@@ -530,7 +529,7 @@ margin-top: 10px;
 
 
 
-
+///////////////////////////START-Table
 
 .flex-iteme{
 	text-align: center;
@@ -556,4 +555,9 @@ margin-top: 10px;
 .custom-label > input[type=radio] {
 				display: none;
 			}
-		
+.podt {
+	width: 250px;
+	margin: 0 auto;
+	// display: inline-block;
+}
+///////////////////////////END-Table
