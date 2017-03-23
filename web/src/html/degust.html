@@ -12,21 +12,21 @@
 				<section>
 					<div class="section1">
 						<img src="{{set?'/assets/img/minus.png':'/assets/img/plus.png'}}" ng-click="set=!set">
-						<div>Панель:{{panel.number}} Участников: {{panel.people}}</div>
+						<div><b>Участник</b>:{{panel.number}} ФИО: {{panel.people}}</div>
 					</div>
 
 					<div class="panel-show" ng-show="set">
-						Номер дегустации
-						<input type="number" ng-model="panel.number" >
-						Количество участников
-						<input type="number" ng-model="panel.people" >
+					<!-- 	Номер дегустации
+						<input type="number" ng-model="panel.number" > -->
+						Фамилия и Имя
+						<input type="text" ng-model="panel.people" >
 					</div>
 				</section>
 <!-- SECTION ------------------------------------------>
 				<section>
 					<div class="section1">
 						<img src="{{product?'/assets/img/minus.png':'/assets/img/plus.png'}}" ng-click="product=!product">
-						<div>Продукт:{{panel.product}} </div>
+						<div><b>Продукт</b>:{{panel.product}} </div>
 						
 					</div>
 
@@ -57,23 +57,29 @@
 				<section>
 					<div class="section1">
 						<img src="{{cart?'/assets/img/minus.png':'/assets/img/plus.png'}}" ng-click="cart=!cart">
-						<div>Карта продукта: {{panel.proizvod}} {{panel.name}} {{panel.sort}} {{panel.god}} </div>
+						<div><b>Карта продукта</b>: {{panel.proizvod}} {{panel.name}} {{panel.sortv}} {{panel.god}} </div>
 					</div>
 					
 					<div class="cart-show" ng-show="cart">
 						<div class="karta">
 							<div class="karta-1">
-							<span>Производитель:</span><br>
-							<span>Год:</span><br>
-							<span>Название:</span><br>
-							<span>Сорт:</span><br>
-						</div>
-						<div class="karta-2">
-							<input type="text" ng-model="panel.proizvod"><br>				
-							<input type="number" ng-model="panel.god"><br>				
-							<input type="text" ng-model="panel.name"><br>
-							<input type="text" ng-model="panel.sort"><br>
-						</div>
+								<!-- <span>Производитель:</span><br>
+								<span>Год:</span><br>
+								<span>Название:</span><br>
+								<span>Сорт:</span><br> -->
+								<ul>
+									<li>Производитель</li>
+									<li>Год</li>
+									<li>Название</li>
+									<li>Сорт</li>
+								</ul>
+							</div>
+							<div class="karta-2">
+								<input type="text" ng-model="panel.proizvod"><br>				
+								<input type="number" ng-model="panel.god"><br>				
+								<input type="text" ng-model="panel.name"><br>
+								<input type="text" ng-model="panel.sortv"><br>
+							</div>
 						<div style="clear: both;"></div>
 						</div>
 					</div>
@@ -82,9 +88,25 @@
 				<section>
 					<div class="section1">
 						<img src="{{metod?'/assets/img/minus.png':'/assets/img/plus.png'}}" ng-click="metod=!metod">
-						<div>Метод: {{panel.metod}} Макс. оценка: {{panel.eval}} </div>
+						<div><b>Метод</b>: {{panel.metod}} Макс. оценка: {{panel.eval}} </div>
 
 					</div>
+
+				<!-- 		<br>
+						<input type="number" ng-model="count">
+						  <div ng-repeat="i in nTimes(count)"> 
+						  <div class="flex-container">
+						    <label class="custom-label"> 
+						    <input ng-model=valt.izum type="radio" ng-value="i+1" name="mark"/> 
+						    <span class="flex-iteme">{{i+1}}</span> 
+						    </label> 
+						    </div>
+						 </div>
+						  <p>Оценка: {{valt.izum}}</p> -->
+
+
+
+
 					
 					<div class="metod-show" ng-show="metod">
 						<div class="flex-container">
@@ -123,9 +145,11 @@
 					</div>
 				</section>
 				<div class="tofleivor">
-					<button  ui-sref=".fleivor" class="button tofleivorBT">Анализ</button>
+					<button  ui-sref=".fleivor" class="button tofleivorBT" ng-click="nTimes()">Анализ</button>
 					<div style="clear: both;"></div>
 				</div>
 
 		</div>
+
 	</div>
+<br>

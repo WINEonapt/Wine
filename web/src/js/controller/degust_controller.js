@@ -5,7 +5,8 @@ angular.module("app")
     $scope.setLang = (lang)=>{
       $rootScope.lang = lang
     }
-    
+        $scope.panel =[];
+        $scope.valt = {};
         $scope.val =[];
         var v = $scope.val;
         $scope.show =1 ;
@@ -20,20 +21,20 @@ angular.module("app")
         var g = $scope.grafik;
         g.g ="1";
 
-        $scope.labelsRadar =["Вишня", "Гранат", "Смородина", "Ежевика", "Слива", "Конфитюр", "Сафьян", "Черный шоколад", "Изюм", "Сливки", "Корица", "Стручковая ваниль", "Вкус", "Послевкусие", "Общее впечатление"];
+        $scope.labelsRadar =["Вишня", "Гранат", "Смородина", "Ежевика", "Слива", "Конфитюр", "Сафьян", "Черный шоколад", "Изюм", "Сливки", "Корица", "Стручковая ваниль"];
         $scope.dataRadar = [
-        [v.vish, v.gran, v.smor, v.ej, v.sliv, v.konf, v.saf, v.black, v.izum, v.slivki, v.kor, v.vanil, v.vkus, v.poslevkus, v.vpech],
-        [0,0,0,0,0,8]
+        [v.vish, v.gran, v.smor, v.ej, v.sliv, v.konf, v.saf, v.black, v.izum, v.slivki, v.kor, v.vanil],
+        [0,8]
         ];
 
-        $scope.labelsChart =["Вишня", "Гранат", "Смородина", "Ежевика", "Слива", "Конфитюр", "Сафьян", "Черный шоколад", "Изюм", "Сливки", "Корица", "Стручковая ваниль", "Вкус", "Послевкусие", "Общее впечатление"];
+        $scope.labelsChart =["Вишня", "Гранат", "Смородина", "Ежевика", "Слива", "Конфитюр", "Сафьян", "Черный шоколад", "Изюм", "Сливки", "Корица", "Стручковая ваниль"];
         $scope.dataChart = [
-        [v.vish, v.gran, v.smor, v.ej, v.sliv, v.konf, v.saf, v.black, v.izum, v.slivki, v.kor, v.vanil, v.vkus, v.poslevkus, v.vpech],
-        [0,0,0,0,0,0]
+        [v.vish, v.gran, v.smor, v.ej, v.sliv, v.konf, v.saf, v.black, v.izum, v.slivki, v.kor, v.vanil],
+        [0]
         ];
 
-        $scope.labelsArea =["Вишня", "Гранат", "Смородина", "Ежевика", "Слива", "Конфитюр", "Сафьян", "Черный шоколад", "Изюм", "Сливки", "Корица", "Стручковая ваниль", "Вкус", "Послевкусие", "Общее впечатление"];
-        $scope.dataArea = [v.vish, v.gran, v.smor, v.ej, v.sliv, v.konf, v.saf, v.black, v.izum, v.slivki, v.kor, v.vanil, v.vkus, v.poslevkus, v.vpech];
+        $scope.labelsArea =["Вишня", "Гранат", "Смородина", "Ежевика", "Слива", "Конфитюр", "Сафьян", "Черный шоколад", "Изюм", "Сливки", "Корица", "Стручковая ваниль"];
+        $scope.dataArea = [v.vish, v.gran, v.smor, v.ej, v.sliv, v.konf, v.saf, v.black, v.izum, v.slivki, v.kor, v.vanil];
     }
     $scope.drawGrafik();
 //GRAFIK-end/////////////////////////////////////////////////////////////////
@@ -51,5 +52,14 @@ angular.module("app")
         location.reload()
     }
 //RELOAD-end/////////////////////////////////////////////////////////////////
+    // $scope.count = 0 ;
+    // var count = $scope.count;
+    // $scope.nTimes = (n)=>{ 
+    //     // console.log(count);
+    // var arr = []; 
+    // for(var i=0;i<n;i++)arr.push(i); 
+    // return arr; 
 
+    // }
+ 
   })  

@@ -71,7 +71,7 @@ body {
 			display: flex;
 			-webkit-flex-flow: row wrap;
 			justify-content: space-around;
-	}
+}
 .ready-button, .back-button {
 	display:inline-block;
 	width: 100px;
@@ -102,7 +102,11 @@ body {
 .my-custom-label  input[type=radio] {
 	display: none;
 }
-.my-custom-label  span {
+.my-custom-label {
+	input[type=radio]:checked + span {
+	border-bottom: solid #3045DF;
+	}	
+	span {
 	display:inline-block;
 	width: 100px;
 	height: 20px;
@@ -113,10 +117,9 @@ body {
 	border-bottom: solid #3045DF;
 	cursor: pointer;
 	}
+	}
 }
-input[type=radio]:checked + span {
-	border-bottom: solid #3045DF;
-}
+
 
 .OFFpanel {
 	position: relative;
@@ -136,53 +139,66 @@ input[type=radio]:checked + span {
 	.panel-content{
 		section {
 			margin-top: 15px;
-			.section1{
-				min-width: 150px;
-				display: inline-block;
-				div {
+				.section1{
+					min-width: 150px;
 					display: inline-block;
-					margin-left: 5px;
+					div {
+						display: inline-block;
+						margin-left: 5px;
+					}
+					img {
+						width: 15px;
+						height: 15px;
+						margin-left: 5px;
+						cursor: pointer;
+					}
 				}
-				img {
-					width: 15px;
-					height: 15px;
-					margin-left: 5px;
-					cursor: pointer;
+				.panel-show {
+					margin-top: 15px;
+					margin-left: 30px;
+					padding: 5px 5px 5px 5px;
+					// background-color: #BABABA;
 				}
-			}
-			.panel-show {
-				// margin-top: 15px;
-				padding: 5px 5px 5px 5px;
-				// background-color: #BABABA;
-			}
-			.product-show {
-				margin-top: 15px;
-				padding: 5px 5px 5px 5px;
-				width: 550px;
-				// background-color: #BABABA;
-			}
-			.cart-show {
-				// background-color: #BABABA;
-				width: 300px;
-				margin-top: 15px;
-				padding: 5px 5px 5px 5px;
-				.karta-1{
-					float: left;
+				.product-show {
+					margin-top: 15px;
+					padding: 5px 5px 5px 5px;
+					width: 550px;
+					// background-color: #BABABA;
 				}
-				.karta-2 {
-					float: right;
+				.cart-show {
+					margin-left: 30px;
+					width: 300px;
+					margin-top: 5px;
+					.karta-1{
+						float: left;
+						ul {
+							padding: 0;
+							li {
+								list-style-type: none;
+								line-height: 20px;
+							}
+						}
+					}
+					.karta-2 {
+						margin-top: 13px;
+						float: right;
+					}
 				}
-			}
-			.metod-show {
-				// background-color: #BABABA;
-				padding: 5px 5px 5px 5px;
-				span {
-					width: 200px;
+				.metod-show {
+					margin-top: 5px;
+					margin-left: 30px;
+					padding: 5px 5px 5px 5px;
+					span {
+						width: 180px;
+					}
+					label {
+						margin-right:30px;
+						margin-top: 10px;	
+					}
+					.max-point {
+						margin-top: 10px;
+					}
 				}
-				.max-point {
-					margin-top: 10px;
-				}
-			}
 		}
 	}
 }
@@ -213,29 +229,37 @@ input[type=radio]:checked + span {
 ///////////////grafik.html////////////////
 
 .select-graf {
-	width: 630px;
+	width: 550px;
 	margin: 15px auto  15px auto;
 		.graf-label {
 			input[type=radio] {
 				display: none;
 			}
+			
 			span {
 			display:inline-block;
-			width: 200px;
+			width: 150px;
 			height: 40px;
 			line-height: 40px;
-			background: #efefef;
-			border:  solid #efefef;
-			text-align: center;
+			/*background: #efefef;*/
+		/*	border:  solid #efefef;*/
+			
 			cursor: pointer;
+			font-size: 15px;
+			text-align: center;
 			&:hover {
-				border:  solid #C52028;
+				/*border:  solid #C52028;*/
+				border-bottom: solid #3045DF;
+				cursor: pointer;
 			}
 
 			}
-			input[type=radio]:checked + span {
+		/*	input[type=radio]:checked + span {
 				background: #95C88D;
 				border: solid #95C88D;
+			}*/
+			input[type=radio]:checked + span {
+			border-bottom: solid #3045DF;
 			}
 		}
 }
@@ -249,20 +273,24 @@ input[type=radio]:checked + span {
 	text-align: center;
 	margin-left: 35px;
 }
-.custom-label  span {
-	display:inline-block;
-	width: 15px;
-	height: 15px;
-	background: #efefef;
-	border:  solid #efefef;
-	text-align: center;
-	&:hover {
-		border:  solid #C52028;
-		cursor: pointer;
-	}
+.custom-label  {
+
 	input[type=radio]:checked + span {
 	background-color: #95C88D;
 	border: solid #95C88D;
+	}
+
+	span {
+		display:inline-block;
+		width: 15px;
+		height: 15px;
+		background: #efefef;
+		border:  solid #efefef;
+		text-align: center;
+		&:hover {
+			border:  solid #C52028;
+			cursor: pointer;
+		}
 	}
 }
 .custom-label > input[type=radio] {
@@ -286,5 +314,7 @@ input[type=radio]:checked + span {
 
 ///////////////TABLE-END////
 
-
+footer {
+	margin-top: 50px;
+}
 
