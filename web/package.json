@@ -34,13 +34,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OdessaOnaft/webJudge.git"
+    "url": "git+https://github.com/WINEonapt/Wine.git"
   },
   "keywords": [
     "web",
     "judge",
     "javascript",
-    "node"
+    "node",
+    "wine"
   ],
   "author": "Iliev Vladislav",
   "license": "ISC",

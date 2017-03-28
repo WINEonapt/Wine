@@ -11,8 +11,9 @@ angular.module("app")
         var v = $scope.val;
         $scope.show =1 ;
 
-    $scope.goFuck = ()=> {
-        // console.log(v.vish)
+    $scope.gouck = ()=> {
+        // console.log($scope.panel.people);
+        // console.log(0);
     }
 
 // GRAFIK-start//////////////////////////////////////////////////////////////////
