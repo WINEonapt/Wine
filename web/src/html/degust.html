@@ -26,29 +26,29 @@
 				<section>
 					<div class="section1">
 						<img src="{{product?'/assets/img/minus.png':'/assets/img/plus.png'}}" ng-click="product=!product">
-						<div><b>Продукт</b>:{{panel.product}} </div>
+						<div><b>Продукт</b>:{{translate(panel.product)}} </div>
 						
 					</div>
 
 					<div class="product-show" ng-show="product">
 						<label class="my-custom-label">
-							<input type="radio" ng-model="panel.product" value="Вино"/>
+							<input type="radio" ng-model="panel.product" value="wine"/>
 							<span class="flex-item">Вино</span>
 						</label> 
 						<label class="my-custom-label">
-							<input  type="radio" ng-model="panel.product" value="Мясо"/>
+							<input  type="radio" ng-model="panel.product" value="meat"/>
 							<span class="flex-item">Мясо</span>
 						</label> 
 						<label class="my-custom-label">
-							<input type="radio" ng-model="panel.product" value="Молоко"/>
+							<input type="radio" ng-model="panel.product" value="milk"/>
 							<span class="flex-item">Молоко</span>
 						</label> 
 						<label class="my-custom-label">
-							<input type="radio" ng-model="panel.product" value="Пиво"/>
+							<input type="radio" ng-model="panel.product" value="beer"/>
 							<span class="flex-item">Пиво</span>
 						</label> 
 						<label class="my-custom-label">
-							<input type="radio" ng-model="panel.product" value="Шампанское"/>
+							<input type="radio" ng-model="panel.product" value="Champagne"/>
 							<span class="flex-item">Шампанское</span>
 						</label> 
 					</div>
@@ -57,7 +57,7 @@
 				<section>
 					<div class="section1">
 						<img src="{{cart?'/assets/img/minus.png':'/assets/img/plus.png'}}" ng-click="cart=!cart">
-						<div><b>Карта продукта</b>: {{panel.proizvod}} {{panel.name}} {{panel.sortv}} {{panel.god}} </div>
+						<div><b>Карта продукта</b>: {{panel.proizvod}} {{panel.sortv}} {{panel.god}} </div>
 					</div>
 					
 					<div class="cart-show" ng-show="cart">
@@ -80,6 +80,7 @@
 								<input type="text" ng-model="panel.name"><br>
 								<input type="text" ng-model="panel.sortv"><br>
 							</div>
+							<div class="karta-3">Название: <br>  {{panel.name}} </div>
 						<div style="clear: both;"></div>
 						</div>
 					</div>
@@ -138,7 +139,7 @@
 
 						<div class="max-point">
 							Максимальная оценка:
-							<input type="number" min="1" value="1" ng-model="panel.eval">
+							<input type="number" min="1" value="7" ng-model="panel.eval">
 						</div>
 
 

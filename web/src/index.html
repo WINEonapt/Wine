@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app" ng-controller="mainController">
+<html lang="ru" ng-app="app" ng-controller="mainController">
 <head>
     <meta charset="UTF-8">
     <title>APP</title>
@@ -10,12 +10,13 @@
     <!-- endbower -->
     
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="vendor.css">
 </head>
 <body>
 
-    <header class="main-header" ng-include="'html/header.html'"></header>
+    <header class="main-header" ng-include="'/html/header.html'"></header>
     <div ui-view class="main-container"></div>
-    <footer class="main-footer" ng-include="'html/footer.html'"></footer>
+    <footer class="main-footer" ng-include="'/html/footer.html'"></footer>
 
     
     <!-- bower:js -->

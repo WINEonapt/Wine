@@ -1,11 +1,11 @@
 angular.module("app")
   .factory('$translateRu', [() => {
     var words = {
-      iliev: "Ильев",
-      sich: "Сичкаренко",
-      ilyzshuk: "Ильящук",
-      danilyuk: "Данилюк",
-      gusev: "Гусев"
+      wine: "Вино",
+      meat: "Мясо",
+      milk: "Молоко",
+      beer: "Пиво",
+      Champagne: "Шампанское",
     }
     return words
 

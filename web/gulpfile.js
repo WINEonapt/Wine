@@ -1,3 +1,5 @@
+var uglifyjs = require('uglify-js');
+var minifier = require('gulp-uglify/minifier');
 var gulp = require('gulp');
 var pump = require('pump');
 var serve = require('gulp-serve');
@@ -20,6 +22,7 @@ var mainBowerFiles = require('main-bower-files');
 var templateCache = require('gulp-angular-templatecache');
 var wiredep = require('wiredep').stream;
 var cleanCSS = require('gulp-clean-css');
+var filter = require('gulp-filter');
 gulp.task('inject', ['less', 'babel', 'html'], function () {
   // It's not necessary to read the files (will speed up things), we're only after their paths: 
 
@@ -162,17 +165,25 @@ gulp.task('assets-build', function(cb) {
 
 
 gulp.task('bower-build', function(cb) {
+    jsFilter = filter('**/*.js', {restore: true});
+    cssFilter = filter('**/*.css', {restore: true})
     pump([
       gulp.src(mainBowerFiles({
                 paths: {
                     bowerDirectory: 'bower_components',
                     bowerrc: '.bowerrc',
                     bowerJson: 'bower.json'
-      }})),
-      concat("vendor.js"),
+      }}).concat(['tmp/'])),
+      jsFilter,
+
+      concat("scripts/vendor.js"),
       uglify(),
-      gulp.dest('build/scripts')
-      
+      jsFilter.restore,
+      cssFilter,
+      concat("vendor.css"),
+      cleanCSS(),
+      cssFilter.restore,
+      gulp.dest('build/')
     ]),
     cb()
 });
@@ -229,4 +240,4 @@ gulp.task('html-build',['css-build', 'js-build','assets-build', 'bower-build'], 
 
 
 
-gulp.task('default', ['html-build'])
+gulp.task('default', ['html-build']);
